@@ -63,6 +63,8 @@ Get 2 random metavariables from 4 random themes::
 Themes
 ------
 
+::
+
     # Get theme by theme name
     >>> foo = metasyntactic.get("foo")
     >>> foo
@@ -83,6 +85,8 @@ Themes
 
 Categories
 ==========
+
+::
 
     # Get random name in specific category
     >>> foo.random(8, category="fr")

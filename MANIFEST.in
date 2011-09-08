@@ -1,0 +1,7 @@
+include CONTRIBUTORS
+include MANIFEST.in
+include README.rst
+include README
+include setup.cfg
+include gen.sh
+recursive-include metasyntactic *.py

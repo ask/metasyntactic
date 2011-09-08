@@ -1,0 +1,55 @@
+The following people contributed to Acme::MetaSyntactic,
+either by proposing theme ideas, updating existing themes,
+sending bug reports, running the test suite on their machine
+and sending me the report or sending complete lists of items
+for new or existing themes. Thanks for all the work I didn't
+have to do!
+
+They are listed below in chronological order (of when I actually
+used their contributions):
+* Vahe Sarkissian
+* David Landgren
+* Sébastien Aperghis-Tramoni
+* Mike Castle
+* anonymous
+* Scott Lanning
+* Michel Rodriguez
+* Rafael Garcia-Suarez
+* Aldo Calpini
+* Jérôme Fenal
+* Ricardo Signes
+* Hakim Cassimally
+* Max Maischein
+* Offer Kaye
+* Cédric Bouvier
+* Jean Forget
+* Guy Widloecher
+* Xavier Caron
+* Paul-Christophe Varoutas
+* Gábor Szabó
+* Mark Fowler
+* Miss Barbie
+* Martin Vorländer
+* Alberto Manuel Brandão Simões
+* Nicholas Clark
+* Gaal Yahas
+* Estelle Souche
+* Abigail
+* Antoine Hulin
+* Michael Scherer
+* Jan Pieter Cornet
+* Flavio Poletti
+* Leon Brocard
+* Anja Krebber
+* Yanick Champoux
+* Gisbert W. Selke
+* José Castro
+* David Golden
+* Matthew Musgrove
+* David H. Adler
+* Éric Cholet
+* Elliot Shank
+* Simon Myers
+
+Thank you all for making Acme::MetaSyntactic such a successful module!
+

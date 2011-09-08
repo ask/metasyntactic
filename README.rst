@@ -2,15 +2,18 @@
  metasyntactic - Themed metasyntactic variables names
 ######################################################
 
-:Version: 1.2.1
+:Version: 0.99
 
 Synopsis
 ========
 
 This is a port of the excellent Perl module `Acme::MetaSyntactic`_,
-which was originally written by Phillipe (BooK) Bruhat.
+written by Phillipe (BooK) Bruhat.
 
 In fact it is automatically generated from Acme::MetaSynctacic.
+And this particular version was generated from version 0.99.
+
+The original CONTRIBUTORS file is shipped with this distribution.
 
 .. _`Acme::MetaSyntactic`:
     http://search.cpan.org/dist/Acme-MetaSyntactic/lib/Acme/MetaSyntactic.pm

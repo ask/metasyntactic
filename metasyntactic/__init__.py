@@ -1,6 +1,6 @@
 """metasyntactic - Themed metasyntactic variables names"""
 
-VERSION = (0, 0, 1)
+VERSION = (0, 99)
 __version__ = ".".join(map(str, VERSION[0:3])) + "".join(VERSION[3:])
 __author__ = "Ask Solem"
 __contact__ = "ask@celeryproject.org"

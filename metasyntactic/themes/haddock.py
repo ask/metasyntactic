@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::haddock
@@ -21,7 +19,7 @@ DESCRIPTION
 
 
 Captain Haddock's expressions from the comic-book \ *Tintin et Milou*\ ,
-by Hergé.
+by Herg.
 
 The French list comes from `http://www.bdenvrac.com/doc/tinsultes.html <http://www.bdenvrac.com/doc/tinsultes.html>`_.
 
@@ -40,12 +38,76 @@ CONTRIBUTORS
 ************
 
 
-Jérôme Fenal provided the original idea and the French and English lists.
+Jrme Fenal provided the original idea and the French and English lists.
 Jan Pieter Cornet provided the Dutch list.
 
-Introduced in version 0.16, published on April 4, 2005.
 
-Updated with the Dutch list in version 0.59, published on January 30, 2006.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2013-06-03 - v1.002
+ 
+ Fixed a spelling error in the English list.
+ Published in Acme-MetaSyntactic-Themes version 1.032.
+ 
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command
+ in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-01-30
+ 
+ Updated with the Dutch list provided by Jan Pieter Cornet
+ in Acme-MetaSyntactic version 0.59.
+ 
+
+
+- \*
+ 
+ 2006-01-25
+ 
+ Jan Pieter Corlet provided the list of all Cpt. Haddock "violent
+ expressions" in the dutch translation of Tintin, taken from the website:
+ `http://www.xs4all.nl/~janhee/haddock.html <http://www.xs4all.nl/~janhee/haddock.html>`_
+ 
+
+
+- \*
+ 
+ 2005-04-04
+ 
+ Introduced in Acme-MetaSyntactic version 0.16.
+ 
+
+
+- \*
+ 
+ 2005-03-17
+ 
+ Two lists submitted by Jrme Fnal, as \ *haddock_en*\  and \ *haddock_fr*\ .
+ 
+
 
 
 ********
@@ -148,7 +210,7 @@ Meddlesome_cabin_boy Megalomaniac Miserable_blundering_barbecued_blister
 Miserable_earthworms Miserable_earth_worms Miserable_miser
 Miserable_molecule_of_mildew Misguided_missles Mister_Mule Monopolizers
 Monster Morons Moth_eaten_marmot Moujik Moujiks Mountebanks
-Mserable_blundering_barbequed_blister Mule Musical_morons Nanny_goat
+Miserable_blundering_barbequed_blister Mule Musical_morons Nanny_goat
 Nincompoop Nitwits Nitwitted_ninepins Nitwitted_nine_pins Numbskulls
 Nyctalop Nyctalops Odd_toed_ungulate Olympic_Athlete Ophicleides
 Orangoutang Ostrogoth Pachyrhizus Paranoiac Parasites Patagonian
@@ -196,6 +258,7 @@ Zandhazen Zandvlooien Zeekomkommers Zeekreeft Zeerover Zeerovers Zeeschuimer Zee
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -203,14 +266,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -221,6 +284,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -232,7 +296,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

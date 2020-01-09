@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #############################
 Acme::MetaSyntactic::olympics
@@ -23,9 +21,9 @@ DESCRIPTION
 This theme lists the cities who have hosted, or will host, Olympic Games.
 Cities for both the Summer and Winter games are listed.
 
-The list comes from `http://www.olympic.org/ <http://www.olympic.org/>`_.
+The list was originally fetched from `http://www.olympic.org/ <http://www.olympic.org/>`_.
 
-The following cities have held, or will hold, the Olympic games.
+The following cities have held, or will hold, the Olympic games:
 
 
 .. code-block:: perl
@@ -33,6 +31,8 @@ The following cities have held, or will hold, the Olympic games.
      Summer Games
      ============
  
+     2020   Tokyo
+     2016   Rio de Janeiro
      2012   London
      2008   Beijing
      2004   Athens
@@ -57,7 +57,7 @@ The following cities have held, or will hold, the Olympic games.
      1920   Antwerp
      1912   Stockholm
      1908   London
-     1904   St. Louis
+     1904   Saint-Louis
      1900   Paris
      1896   Athens
  
@@ -65,6 +65,8 @@ The following cities have held, or will hold, the Olympic games.
      Winter Games
      ============
  
+     2018   Pyeongchang
+     2014   Sochi
      2010   Vancouver
      2006   Torino
      2002   Salt Lake City
@@ -81,22 +83,70 @@ The following cities have held, or will hold, the Olympic games.
      1960   Squaw Valley
      1956   Cortina d'Ampezzo
      1952   Oslo
-     1948   St. Moritz
+     1948   Saint-Moritz
      1936   Garmisch-Partenkirchen
      1932   Lake Placid
-     1928   St. Moritz
+     1928   Saint-Moritz
      1924   Chamonix
 
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Abigail
+Abigail, Philippe Bruhat.
 
-Introduced in version 0.82, published on July 10, 2006.
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2013-09-16 - v1.002
+ 
+ Turned into a multilist, with all combinations of year and seasons
+ as categories and the location for the 2020 summer olympics
+ in Acme-MetaSyntactic-Themes version 1.036.
+ 
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated by Abigail in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with recent future Olympic cities, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-07-10
+ 
+ Introduced in Acme-MetaSyntactic version 0.82.
+ 
+
+
+- \*
+ 
+ 2006-01-26
+ 
+ Submitted by Abigail.
+ 
+
 
 
 ********
@@ -114,6 +164,7 @@ DATA = '''\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -121,14 +172,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -139,6 +190,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -150,7 +202,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

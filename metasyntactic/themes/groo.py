@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #########################
 Acme::MetaSyntactic::groo
@@ -21,7 +19,7 @@ DESCRIPTION
 
 
 A list of characters from the \ *Groo the Wanderer*\  long-running
-comic-book authored by Sergio Aragonès and Mark Evanier.
+comic-book authored by Sergio Aragons and Mark Evanier.
 
 If you are interested in Groo, you should have a look at
 `http://www.groo.com/ <http://www.groo.com/>`_, `http://www.povonline.com/ <http://www.povonline.com/>`_ and
@@ -35,9 +33,44 @@ CONTRIBUTOR
 
 Philippe "BooK" Bruhat.
 
-Introduced in version 0.27, published on June 21, 2005.
 
-Corrected a typo in version 0.82, published on July 10, 2006.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command in version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-07-10
+ 
+ Corrected a typo in Acme-MetaSyntactic version 0.82.
+ 
+
+
+- \*
+ 
+ 2005-06-21
+ 
+ Introduced in Acme-MetaSyntactic version 0.27.
+ 
+
 
 
 ********
@@ -58,6 +91,7 @@ The_Witch_of_Kaan Captain_Ahax\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -65,14 +99,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -83,6 +117,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -94,7 +129,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

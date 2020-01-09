@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ###################################
 Acme::MetaSyntactic::counting_rhyme
@@ -51,7 +49,7 @@ French
 .. code-block:: perl
 
      Am, stram, gram,
-     Pique et pique et colégram
+     Pique et pique et colgram
      Bourre, bourre et ratatam
      Am, stram, gram.
 
@@ -93,17 +91,81 @@ CONTRIBUTORS
 ************
 
 
-Xavier Caron proposed the idea in French, and Paul-Christophe Varoutas
-provided the English version. Abigail provided the Dutch version.
-Yanick and Anja Champoux provided the German theme.
+Xavier Caron, Paul-Christophe Varoutas, Abigail, Yanick and Anja Champoux.
 
-Introduced in version 0.30, published on July 11, 2005.
 
-Patched a typo in version 0.39, published on September 12, 2005.
+*******
+CHANGES
+*******
 
-Updated with the Dutch theme in version 0.47, published on November 7, 2005.
 
-Updated with the German theme in version 0.68, published on April 3, 2006.
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command in Acme-Meta version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-04-03
+ 
+ Updated with the German theme in Acme-MetaSyntactic version 0.68.
+ 
+
+
+- \*
+ 
+ 2006-03-24
+ 
+ Yanick Champoux provided a patch to add a German countring rhyme (RT #18330).
+ 
+
+
+- \*
+ 
+ 2005-11-07
+ 
+ Updated with the Dutch theme in Acme-MetaSyntactic version 0.47.
+ 
+
+
+- \*
+ 
+ 2005-10-25
+ 
+ Abigail provided a patch to add a Dutch counting rhyme.
+ 
+
+
+- \*
+ 
+ 2005-09-12
+ 
+ Patched a typo in Acme-MetaSyntactic version 0.39.
+ 
+
+
+- \*
+ 
+ 2005-07-11
+ 
+ Introduced in Acme-MetaSyntactic version 0.30.
+ 
+ Xavier Caron proposed the idea in French, and Paul-Christophe Varoutas
+ provided the English version.
+ 
+
 
 
 ********
@@ -139,6 +201,7 @@ sag mir erst wie alt\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -146,14 +209,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -164,6 +227,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -175,7 +239,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

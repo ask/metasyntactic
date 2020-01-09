@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ##########################
 Acme::MetaSyntactic::magma
@@ -23,24 +21,24 @@ DESCRIPTION
 This theme list the song titles of the Magma band.
 
 The band was created in 1969 by Christian Vander and is still
-touring in 2006.
+touring in 2012.
 
 Some links:
 
 
-\*
+- \*
  
  `http://members.aol.com/sleeplessz/ <http://members.aol.com/sleeplessz/>`_
  
 
 
-\*
+- \*
  
  `http://www.seventhrecords.com/ <http://www.seventhrecords.com/>`_
  
 
 
-\*
+- \*
  
  `http://en.wikipedia.org/wiki/Magma_(band) <http://en.wikipedia.org/wiki/Magma_(band)>`_
  
@@ -54,7 +52,38 @@ CONTRIBUTOR
 
 Philippe "BooK" Bruhat.
 
-Introduced in version 0.98, published on October 30, 2006.
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-10-15 - v1.001
+ 
+ Updated with the songs from the album Flicit Thsz, and
+ published in Acme-MetaSyntactic-Themes version 1.023.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with the songs from the album mhnthtt-R, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-10-30
+ 
+ Introduced in Acme-MetaSyntactic version 0.98.
+ 
+
 
 
 ********
@@ -117,7 +146,7 @@ Kobah
 Lihns
 Da_Zeuhl_Worts_Mekanik
 Mekanik_Zain
-# names Attahk
+# names attahk
 The_Last_Seven_Minutes
 Spiritual
 Rinde
@@ -146,11 +175,31 @@ Ektah
 # names ka
 Ka_I
 Ka_II
-Ka_III\
+Ka_III
+# names emehntehtt_re
+Emehntehtt_Re_I
+Emehntehtt_Re_II
+Emehntehtt_Re_III
+Emehntehtt_Re_IV
+Funehrarium_Kanht
+Sehe
+# names felicite_thosz
+Ekmah
+Elss
+Dzoi
+Nums
+Teha
+Waahrz
+Duhl
+Tsai
+Ohst
+Zahrr
+Les_Hommes_Sont_Venus\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -158,14 +207,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -176,6 +225,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -187,7 +237,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

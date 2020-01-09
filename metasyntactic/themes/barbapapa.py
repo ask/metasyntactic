@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ##############################
 Acme::MetaSyntactic::barbapapa
@@ -28,14 +26,12 @@ later as a television series.
 The official Barbapapa web site is at `http://www.barbapapa.fr/ <http://www.barbapapa.fr/>`_.
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Abigail
-
-Introduced in version 0.54, published on December 26, 2005.
+Abigail, Philippe Bruhat (BooK).
 
 
 **********
@@ -44,6 +40,39 @@ DEDICATION
 
 
 Philippe dedicates this module to his niece Enora. Merry Christmas!
+
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with the Italian, Spanish and Slovene version, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2005-12-26
+ 
+ Introduced in Acme-MetaSyntactic version 0.54.
+ 
+
+
+- \*
+ 
+ 2005-10-25
+ 
+ Submitted by Abigail with seven languages (English, French, Dutch, German,
+ Finnish, Polish and Swedish).
+ 
+
 
 
 ********
@@ -59,30 +88,30 @@ DATA = '''\
 # default
 fr
 # names fr
-Barbapapa Barbamama Barbabelle Barbalala Barbibul Barbidou Barbidur
-Barbotine Barbouille
+Barbapapa Barbamama  Barbabelle Barbotine    Barbalala  Barbidou Barbidur   Barbibul    Barbouille
 # names en
-Barbapapa Barbamama Barbabravo Barbabright Barbazoo Barbabeau Barbabelle
-Barbalala Barbalib
+Barbapapa Barbamama  Barbabelle Barbalib     Barbalala  Barbazoo Barbabravo Barbabright Barbabeau
 # names nl
-Barbapapa Barbamama Barbabenno Barbabella Barbabientje Barbaborre
-Barbabob Barbabee Barbalala
+Barbapapa Barbamama  Barbabella Barbabientje Barbalala  Barbabee Barbaborre Barbabenno  Barbabob
 # names de
-Barbapapa Barbamama Barbabella Barbaletta Barbarix Barbawum Barbabo
-Barbakus Barbalala
+Barbapapa Barbamama  Barbabella Barbaletta   Barbalala  Barbakus Barbawum   Barbarix    Barbabo
 # names fi
-Barbapapa Barbamama Barbabravo Barbalib Barbazoo Barbabelle Barbalala
-Barbabright Barbabeau
+Barbapapa Barbamama  Barbabelle Barbalib     Barbalala  Barbazoo Barbabravo Barbabright Barbabeau
 # names pl
-Barbapapa Barbamama Barbabelle Barbalala Barbibul Barbidou Barbidur
-Barbotine Barbouille
+Barbapapa Barbamama  Barbabelle Barbotine    Barbalala  Barbidou Barbidur   Barbibul    Barbouille
 # names sv
-Barbapapa Barbamama Barbazoo Barbalala Barbabok Barbaskon Barbafin
-Barbaflink Barbastark\
+Barbapapa Barbamama  Barbafin   Barbabok     Barbalala  Barbazoo Barbastark Barbaflink  Barbaskon
+# names it
+Barbapapa Barbamamma Barbabella Barbottina   Barbalalla Barbazoo Barbaforte Barbabravo  Barbabarba
+# names es
+Barbapapa Barbamama  Barbabella Barbalib     Barbalala  Barbazoo Barbabravo Barbabrillo Barbabello
+# names sl
+Barbapapa Barbamama  Barbalepa  Barbabrala   Barbalala  Barbazoo Barbabravo Barbaplus   Barbazal\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -90,14 +119,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -108,6 +137,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -119,7 +149,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

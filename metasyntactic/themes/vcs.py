@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ########################
 Acme::MetaSyntactic::vcs
@@ -23,16 +21,61 @@ DESCRIPTION
 This theme lists popular (and not so popular) Version Control systems.
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Éric Cholet
+ric Cholet, Abigail.
 
-Introduced in version 0.91, published on September 11, 2006.
 
-Updated by Abigail in version 0.92, published on September 18, 2006.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command in version 1.001,
+ published on May 14,2012
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000,
+ published on May 7, 2012.
+ 
+
+
+- \*
+ 
+ 2006-09-18
+ 
+ Updated by Abigail in Acme-MetaSyntactic version 0.92.
+ 
+
+
+- \*
+ 
+ 2006-09-11
+ 
+ Introduced in Acme-MetaSyntactic version 0.91.
+ 
+
+
+- \*
+ 
+ 2006-06-29
+ 
+ Initial list proposed by ric Cholet.
+ 
+
 
 
 ********
@@ -128,6 +171,7 @@ workshare_professional\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -135,14 +179,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -153,6 +197,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -164,7 +209,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

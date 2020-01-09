@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::antlers
@@ -30,7 +28,36 @@ CONTRIBUTOR
 
 Gaal Yahas.
 
-Introduced in version 0.46, published on October 31, 2005.
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2005-10-31
+ 
+ Introduced in Acme-MetaSyntactic version 0.46.
+ 
+
+
+- \*
+ 
+ 2005-09-16
+ 
+ Submitted by Gaal Yahas.
+ 
+
 
 
 ********
@@ -50,6 +77,7 @@ velvet_antler\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -57,14 +85,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -75,6 +103,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -86,7 +115,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

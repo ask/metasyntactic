@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::pokemon
@@ -12,7 +10,7 @@ NAME
 ****
 
 
-Acme::MetaSyntactic::pokemon - The Pokémon theme
+Acme::MetaSyntactic::pokemon - The Pokmon theme
 
 
 ***********
@@ -20,35 +18,172 @@ DESCRIPTION
 ***********
 
 
-List of the 493 Pokémon characters that are officially known to exist
+List of the 802 Pokmon characters that are officially known to exist
 in the franchise.
 
 This list is based on the following wikipedia article:
-`http://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number <http://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number>`_.
-
-The Wikipedia page lists \ *English names*\ , \ *Romanisation*\  and
-\ *Trademarked Romaji*\ . For each Pokémon, the named linked internaly
-by Wikipedia has been chosen.
+`http://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon <http://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon>`_.
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Abigail
+Abigail, Philippe Bruhat (BooK)
 
-Introduced in version 0.56, published on January 9, 2006.
 
-Updated in version 0.57, published on January 16, 2006.
+*******
+CHANGES
+*******
 
-Updated in version 0.59, published on January 30, 2006.
 
-Updated in version 0.64, published on March 6, 2006.
 
-Updated in version 0.82, published on July 10, 2006.
+- \*
+ 
+ 2017-11-13 - v1.009
+ 
+ Fixed the regular expression used to extract the pokemon names from Wikipedia
+ in Acme-MetaSyntactic-Themes version 1.051.
+ 
 
-Updated in version 0.99, published on November 6, 2006.
+
+- \*
+ 
+ 2017-06-12 - v1.008
+ 
+ Updated with "Pokmon Generation VII"
+ in Acme-MetaSyntactic-Themes version 1.050.
+ 
+
+
+- \*
+ 
+ 2016-03-21 - v1.007
+ 
+ Updated with "The Mythical Pokmons" Volcanion and Magearna
+ in Acme-MetaSyntactic-Themes version 1.049.
+ 
+
+
+- \*
+ 
+ 2015-02-02 - v1.006
+ 
+ Updated with "The Mythical Pokmon Hoopa"
+ in Acme-MetaSyntactic-Themes version 1.045.
+ 
+
+
+- \*
+ 
+ 2014-06-16 - v1.005
+ 
+ Fixed the transformation script to properly deal with accented letters,
+ in Acme-MetaSyntactic-Themes version 1.040.
+ 
+
+
+- \*
+ 
+ 2014-04-07 - v1.004
+ 
+ Updated with "The Mythical Pokmon Diancie"
+ in Acme-MetaSyntactic-Themes version 1.039.
+ 
+
+
+- \*
+ 
+ 2013-12-09 - v1.003
+ 
+ Updated with the Pokmon introduced with the release of Pokmon X and Y
+ in Acme-MetaSyntactic-Themes version 1.038.
+ 
+
+
+- \*
+ 
+ 2012-07-23 - v1.002
+ 
+ Updated with a new Pokmon
+ in Acme-MetaSyntactic-Themes version 1.011.
+ 
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with typographical corrections by Abigail
+ in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with new extraction code and new Pokmons since November 2006, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-11-06
+ 
+ Updated in Acme-MetaSyntactic version 0.99.
+ 
+
+
+- \*
+ 
+ 2006-07-10
+ 
+ Updated in Acme-MetaSyntactic version 0.82.
+ 
+
+
+- \*
+ 
+ 2006-03-06
+ 
+ Updated in Acme-MetaSyntactic version 0.64.
+ 
+
+
+- \*
+ 
+ 2006-01-30
+ 
+ Updated in Acme-MetaSyntactic version 0.59.
+ 
+
+
+- \*
+ 
+ 2006-01-16
+ 
+ Updated in Acme-MetaSyntactic version 0.57.
+ 
+
+
+- \*
+ 
+ 2006-01-09
+ 
+ Introduced in Acme-MetaSyntactic version 0.56, with a remote list.
+ 
+
+
+- \*
+ 
+ 2005-10-26
+ 
+ Submitted by Agigail as a simple list.
+ 
+
 
 
 ********
@@ -448,117 +583,427 @@ Groudon
 Rayquaza
 Jirachi
 Deoxys
-Naetle
-Hayashigame
-Dodaitose
-Hikozaru
-Moukazaru
-Goukazaru
-Pochama
-Pottaishi
-Emperte
-Mukkuru
-Mukubird
-Mukuhawk
-Bippa
-Bidaru
-Koroboshi
-Korotokku
-Kolink
-Rukushio
-Rentorer
-Subomie
+Turtwig
+Grotle
+Torterra
+Chimchar
+Monferno
+Infernape
+Piplup
+Prinplup
+Empoleon
+Starly
+Staravia
+Staraptor
+Bidoof
+Bibarel
+Kricketot
+Kricketune
+Shinx
+Luxio
+Luxray
+Budew
 Roserade
-Zugaidosu
-Rampard
-Tatetops
-Trideps
-Minomutchi
-Minomadam
-Garmeil
-Mitsuhoney
-Beequeen
+Cranidos
+Rampardos
+Shieldon
+Bastiodon
+Burmy
+Wormadam
+Mothim
+Combee
+Vespiquen
 Pachirisu
-Buoysel
-Flowsel
-Cherinbo
-Cherimu
-Karanakushi
-Toritodon
-Eteboss
-Fuwante
-Fuwaride
-Mimirol
-Mimilop
-Mumage
-Donkarasu
-Nyarmar
-Bunyatto
-Lisyan
-Sukanpu
-Sukatanku
-Domira
-Dotakun
+Buizel
+Floatzel
+Cherubi
+Cherrim
+Shellos
+Gastrodon
+Ambipom
+Drifloon
+Drifblim
+Buneary
+Lopunny
+Mismagius
+Honchkrow
+Glameow
+Purugly
+Chingling
+Stunky
+Skuntank
+Bronzor
+Bronzong
 Bonsly
 Mime_Jr
-Pinpuku
-Perap
-Mikaruge
-Fukamaru
+Happiny
+Chatot
+Spiritomb
+Gible
 Gabite
-Gablias
+Garchomp
 Munchlax
 Riolu
 Lucario
-Hipopotasu
-Kabarudon
-Scorpi
-Dorapion
-Greggle
-Dokurog
-Muskippa
-Keikouo
-Neorant
-Tamanta
-Yukikaburi
-Yukinooh
+Hippopotas
+Hippowdon
+Skorupi
+Drapion
+Croagunk
+Toxicroak
+Carnivine
+Finneon
+Lumineon
+Mantyke
+Snover
+Abomasnow
 Weavile
-Jibacoil
-Berobelt
-Dosidon
-Mojanbo
-Elekible
-Booburn
+Magnezone
+Lickilicky
+Rhyperior
+Tangrowth
+Electivire
+Magmortar
 Togekiss
-Megayanma
-Leafia
-Glacia
-Glion
-Manmoo
-PolygonZ
-Erlade
-Dainose
-Yonowahru
-Yukimenoko
+Yanmega
+Leafeon
+Glaceon
+Gliscor
+Mamoswine
+Porygon_Z
+Gallade
+Probopass
+Dusknoir
+Froslass
 Rotom
-Yuxie
-Emurit
-Agnome
+Uxie
+Mesprit
+Azelf
 Dialga
 Palkia
 Heatran
 Regigigas
 Giratina
-Crecelia
+Cresselia
 Phione
 Manaphy
 Darkrai
-Sheimi
-Arseus\
+Shaymin
+Arceus
+Victini
+Snivy
+Servine
+Serperior
+Tepig
+Pignite
+Emboar
+Oshawott
+Dewott
+Samurott
+Patrat
+Watchog
+Lillipup
+Herdier
+Stoutland
+Purrloin
+Liepard
+Pansage
+Simisage
+Pansear
+Simisear
+Panpour
+Simipour
+Munna
+Musharna
+Pidove
+Tranquill
+Unfezant
+Blitzle
+Zebstrika
+Roggenrola
+Boldore
+Gigalith
+Woobat
+Swoobat
+Drilbur
+Excadrill
+Audino
+Timburr
+Gurdurr
+Conkeldurr
+Tympole
+Palpitoad
+Seismitoad
+Throh
+Sawk
+Sewaddle
+Swadloon
+Leavanny
+Venipede
+Whirlipede
+Scolipede
+Cottonee
+Whimsicott
+Petilil
+Lilligant
+Basculin
+Sandile
+Krokorok
+Krookodile
+Darumaka
+Darmanitan
+Maractus
+Dwebble
+Crustle
+Scraggy
+Scrafty
+Sigilyph
+Yamask
+Cofagrigus
+Tirtouga
+Carracosta
+Archen
+Archeops
+Trubbish
+Garbodor
+Zorua
+Zoroark
+Minccino
+Cinccino
+Gothita
+Gothorita
+Gothitelle
+Solosis
+Duosion
+Reuniclus
+Ducklett
+Swanna
+Vanillite
+Vanillish
+Vanilluxe
+Deerling
+Sawsbuck
+Emolga
+Karrablast
+Escavalier
+Foongus
+Amoonguss
+Frillish
+Jellicent
+Alomomola
+Joltik
+Galvantula
+Ferroseed
+Ferrothorn
+Klink
+Klang
+Klinklang
+Tynamo
+Eelektrik
+Eelektross
+Elgyem
+Beheeyem
+Litwick
+Lampent
+Chandelure
+Axew
+Fraxure
+Haxorus
+Cubchoo
+Beartic
+Cryogonal
+Shelmet
+Accelgor
+Stunfisk
+Mienfoo
+Mienshao
+Druddigon
+Golett
+Golurk
+Pawniard
+Bisharp
+Bouffalant
+Rufflet
+Braviary
+Vullaby
+Mandibuzz
+Heatmor
+Durant
+Deino
+Zweilous
+Hydreigon
+Larvesta
+Volcarona
+Cobalion
+Terrakion
+Virizion
+Tornadus
+Thundurus
+Reshiram
+Zekrom
+Landorus
+Kyurem
+Keldeo
+Meloetta
+Genesect
+Chespin
+Quilladin
+Chesnaught
+Fennekin
+Braixen
+Delphox
+Froakie
+Frogadier
+Greninja
+Bunnelby
+Diggersby
+Fletchling
+Fletchinder
+Talonflame
+Scatterbug
+Spewpa
+Vivillon
+Litleo
+Pyroar
+Flabebe
+Floette
+Florges
+Skiddo
+Gogoat
+Pancham
+Pangoro
+Furfrou
+Espurr
+Meowstic
+Honedge
+Doublade
+Aegislash
+Spritzee
+Aromatisse
+Swirlix
+Slurpuff
+Inkay
+Malamar
+Binacle
+Barbaracle
+Skrelp
+Dragalge
+Clauncher
+Clawitzer
+Helioptile
+Heliolisk
+Tyrunt
+Tyrantrum
+Amaura
+Aurorus
+Sylveon
+Hawlucha
+Dedenne
+Carbink
+Goomy
+Sliggoo
+Goodra
+Klefki
+Phantump
+Trevenant
+Pumpkaboo
+Gourgeist
+Bergmite
+Avalugg
+Noibat
+Noivern
+Xerneas
+Yveltal
+Zygarde
+Diancie
+Hoopa
+Volcanion
+Rowlet
+Dartrix
+Decidueye
+Litten
+Torracat
+Incineroar
+Popplio
+Brionne
+Primarina
+Pikipek
+Trumbeak
+Toucannon
+Yungoos
+Gumshoos
+Grubbin
+Charjabug
+Vikavolt
+Crabrawler
+Crabominable
+Oricorio
+Cutiefly
+Ribombee
+Rockruff
+Lycanroc
+Wishiwashi
+Mareanie
+Toxapex
+Mudbray
+Mudsdale
+Dewpider
+Araquanid
+Fomantis
+Lurantis
+Morelull
+Shiinotic
+Salandit
+Salazzle
+Stufful
+Bewear
+Bounsweet
+Steenee
+Tsareena
+Comfey
+Oranguru
+Passimian
+Wimpod
+Golisopod
+Sandygast
+Palossand
+Pyukumuku
+Type_Null
+Silvally
+Minior
+Komala
+Turtonator
+Togedemaru
+Mimikyu
+Bruxish
+Drampa
+Dhelmise
+Jangmo_o
+Hakamo_o
+Kommo_o
+Tapu_Koko
+Tapu_Lele
+Tapu_Bulu
+Tapu_Fini
+Cosmog
+Cosmoem
+Solgaleo
+Lunala
+Nihilego
+Buzzwole
+Pheromosa
+Xurkitree
+Celesteela
+Kartana
+Guzzlord
+Necrozma
+Magearna
+Marshadow\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -566,14 +1011,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -584,6 +1029,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -595,7 +1041,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

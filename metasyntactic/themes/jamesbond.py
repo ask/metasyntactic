@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ##############################
 Acme::MetaSyntactic::jamesbond
@@ -34,23 +32,66 @@ and \ ``other``\ ), and \ ``firearms``\  (firearms used by Bond).
 The default category is \ ``films``\ .
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Philippe "BooK" Bruhat.
+Philippe Bruhat (BooK), Abigail
 
-Introduced in version 0.07 (heh), published on January 31, 2005.
 
-Updated in version 0.45, published on October 24, 2005.
+*******
+CHANGES
+*******
 
-Updated in version 0.70 (that's 0.07 shifted left) with actors names
-and "girls" names. Both lists were provided by Abigail. Theme published
-on April 17, 2006.
 
-Updated in version 0.76 with 4 categories (some of them having sub-categories)
-by Abigail. Theme published on May 29, 2006.
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with movie titles and actresses since 2006, and received its
+ own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-05-29
+ 
+ Updated in Acme-MetaSyntactic version 0.76 with categories \ *villains*\ ,
+ \ *vehicles*\  (with subcategories \ *cars*\ , \ *motorcycles*\ , \ *aircraft*\ ,
+ \ *ships*\ , and \ *others*\ ), and \ *firearms*\ , all provided by Abigail
+ on 2006-05-22.
+ 
+
+
+- \*
+ 
+ 2006-04-17
+ 
+ Updated in Acme-MetaSyntactic version 0.70 (that's 0.07 shifted left)
+ with categories \ *actors*\  and \ *girls*\ . Both lists were provided by Abigail
+ as \ *bond_actors*\  (actors playing James Bond) and \ *bond_girls*\  (actresses
+ playing Bond girls) on 2005-10-24.
+ 
+
+
+- \*
+ 
+ 2005-10-24
+ 
+ Updated in Acme-MetaSyntactic version 0.45.
+ 
+
+
+- \*
+ 
+ 2005-01-31
+ 
+ Introduced in Acme-MetaSyntactic version 0.07 (heh).
+ 
+
 
 
 ********
@@ -66,12 +107,14 @@ DATA = '''\
 # default 
 films
 # names films
-Dr_No From_Russia_With_Love Goldfinger Thunderball
-You_Only_Live_Twice On_Her_Majesty_s_Secret_Service Diamonds_Are_Forever
+Dr_No From_Russia_With_Love Goldfinger Thunderball You_Only_Live_Twice
+On_Her_Majesty_s_Secret_Service
+Diamonds_Are_Forever
 Live_and_Let_Die The_Man_With_the_Golden_Gun The_Spy_Who_Loved_Me
 Moonraker For_Your_Eyes_Only Octopussy A_View_to_a_Kill
-The_Living_Daylights Licence_To_Kill GoldenEye Tomorrow_Never_Dies
-The_World_is_Not_Enough Die_Another_Day Casino_Royale
+The_Living_Daylights Licence_To_Kill
+GoldenEye Tomorrow_Never_Dies The_World_is_Not_Enough Die_Another_Day
+Casino_Royale Quantum_of_Solace Skyfall
 # names actors
 Sean_Connery George_Lazenby Roger_Moore
 Timothy_Dalton Pierce_Brosnan Daniel_Craig
@@ -86,7 +129,10 @@ Lynn_Holly_Johnson Cassandra_Harris Kristina_Wayborn
 Fiona_Fullerton Grace_Jones Tanya_Roberts Maryam_D_Abo Carey_Lowell
 Talisa_Soto Famke_Janssen Izabella_Dorota_Scorupco Daphne_Deckers
 Teri_Hatcher Cecilie_Thomsen Michelle_Yeoh Maria_Grazia_Cucinotta
-Sophie_Marceau Denise_Richards Halle_Berry Rachel_Grant Rosamund_Pik
+Sophie_Marceau Denise_Richards Halle_Berry Rachel_Grant Rosamund_Pike
+Eva_Green Caterina_Murino Ivana_Milicevic
+Olga_Kurylenko Gemma_Arterton
+Naomie_Harris Berenice_Marlohe
 # names novels fleming
 Casino_Royale Live_and_Let_Die Moonraker Diamonds_Are_Forever
 From_Russia_With_Love Dr_No Goldfinger For_Your_Eyes_Only Thunderball
@@ -152,6 +198,7 @@ Accuracy_International_AW Browing_Hi_Power CZ_25\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -159,14 +206,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -177,6 +224,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -188,7 +236,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

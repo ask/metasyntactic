@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ##############################
 Acme::MetaSyntactic::pornstars
@@ -24,49 +22,455 @@ This is a list of so-called "Porn stars", taken from the Wikipedia.
 
 This theme is divided in two sub-categories: \ ``female``\  & \ ``male``\ .
 
-See `http://en.wikipedia.org/wiki/MultiList_of_female_porn_stars <http://en.wikipedia.org/wiki/MultiList_of_female_porn_stars>`_
-and `http://en.wikipedia.org/wiki/MultiList_of_male_porn_stars <http://en.wikipedia.org/wiki/MultiList_of_male_porn_stars>`_
-for details.
+The source used in 2006 were
+`http://en.wikipedia.org/wiki/List_of_female_porn_stars <http://en.wikipedia.org/wiki/List_of_female_porn_stars>`_
+and `http://en.wikipedia.org/wiki/List_of_male_porn_stars <http://en.wikipedia.org/wiki/List_of_male_porn_stars>`_.
+These pages have been deleted in late 2006.
+
+In 2012, Wikipedia offers
+`http://en.wikipedia.org/wiki/List_of_pornographic_actresses_by_decade <http://en.wikipedia.org/wiki/List_of_pornographic_actresses_by_decade>`_
+as a source for female actresses, but no source for male performers.
+The data for the \ ``male``\  category is therefore \ **obsolete**\ .
+
+In October 2018, that source was removed from this theme, making it static.
+
+In May 2018, the link above was redirected to
+`https://en.wikipedia.org/wiki/List_of_pornographic_performers_by_decade <https://en.wikipedia.org/wiki/List_of_pornographic_performers_by_decade>`_,
+which became the new source of data for both categories as of July 2019.
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Sébastien Aperghis-Tramoni.
+On September 15, 2013, while I was digging for the responsible parties,
+Maddingue summarized this theme as "\ *a stupid idea, part of a bigger
+stupid idea, that was born of the collective pervert minds of ...*\ "
 
-Introduced in version 0.69, published on April 10, 2006.
-
-Updates from Wikipedia:
-
-
-version 0.70, published on April 17, 2006
+Sbastien Aperghis-Tramoni, Philippe Bruhat, Rafal Garcia-Suarez.
 
 
-
-version 0.71, published on April 24, 2006
-
-
-
-version 0.72, published on May 1, 2006
-
-
-
-version 0.74, published on May 15, 2006
-
-
-
-version 0.75, published on May 22, 2006
-
-
-
-version 0.79, published on June 19, 2006
+*******
+CHANGES
+*******
 
 
 
-version 0.89, published on August 28, 2006
+- \*
+ 
+ 2019-10-28 - v1.033
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.054.
+ 
 
+
+- \*
+ 
+ 2019-07-29 - v1.032
+ 
+ Updated with a new remote source for pornstars of both genders
+ in Acme-MetaSyntactic-Themes version 1.053.
+ 
+
+
+- \*
+ 
+ 2018-10-29 - v1.031
+ 
+ Abandonned the remote source for female pornstars, no data change,
+ in Acme-MetaSyntactic-Themes version 1.052.
+ 
+
+
+- \*
+ 
+ 2017-11-13 - v1.031
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.051.
+ 
+
+
+- \*
+ 
+ 2017-06-12 - v1.030
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.050.
+ 
+
+
+- \*
+ 
+ 2016-03-21 - v1.029
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.049.
+ 
+
+
+- \*
+ 
+ 2015-10-19 - v1.028
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.048.
+ 
+
+
+- \*
+ 
+ 2015-08-10 - v1.027
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.047.
+ 
+
+
+- \*
+ 
+ 2015-06-08 - v1.026
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.046.
+ 
+
+
+- \*
+ 
+ 2015-02-02 - v1.025
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.045.
+ 
+
+
+- \*
+ 
+ 2015-01-05 - v1.024
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.044.
+ 
+
+
+- \*
+ 
+ 2014-10-13 - v1.023
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.043.
+ 
+
+
+- \*
+ 
+ 2014-09-15 - v1.022
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.042.
+ 
+
+
+- \*
+ 
+ 2014-08-18 - v1.021
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.041.
+ 
+ On August 2, 2014 the \ *List of pornographic actresses by decade*\ 
+ Wikipedia page was heavily trimmed (removal of 857 names, with only
+ \ *Candy Barr*\  remaining) following the official \ *Biographies of living
+ persons*\  Wikipedia policy. The list is slowly being rebuilt since.
+ 
+
+
+- \*
+ 
+ 2014-06-16 - v1.020
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.040.
+ 
+
+
+- \*
+ 
+ 2014-04-07 - v1.019
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.039.
+ 
+
+
+- \*
+ 
+ 2013-12-09 - v1.018
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.038.
+ 
+
+
+- \*
+ 
+ 2013-10-14 - v1.017
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.037.
+ 
+
+
+- \*
+ 
+ 2013-09-16 - v1.016
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.036.
+ 
+
+
+- \*
+ 
+ 2013-07-22 - v1.015
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.034.
+ 
+
+
+- \*
+ 
+ 2013-06-17 - v1.014
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.033.
+ 
+
+
+- \*
+ 
+ 2013-06-03 - v1.013
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.032.
+ 
+
+
+- \*
+ 
+ 2013-03-25 - v1.012
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.031.
+ 
+
+
+- \*
+ 
+ 2013-02-18 - v1.011
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.030.
+ 
+
+
+- \*
+ 
+ 2013-01-14 - v1.010
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.029.
+ 
+
+
+- \*
+ 
+ 2012-11-19 - v1.009
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.028.
+ 
+
+
+- \*
+ 
+ 2012-10-22 - v1.008
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.024.
+ 
+
+
+- \*
+ 
+ 2012-10-01 - v1.007
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.021.
+ 
+
+
+- \*
+ 
+ 2012-09-10 - v1.006
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.018.
+ 
+
+
+- \*
+ 
+ 2012-08-27 - v1.005
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.016.
+ 
+
+
+- \*
+ 
+ 2012-07-23 - v1.004
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.011.
+ 
+
+
+- \*
+ 
+ 2012-06-25 - v1.003
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.007.
+ 
+
+
+- \*
+ 
+ 2012-05-28 - v1.002
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.003.
+ 
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command
+ in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with a new remote source for female pornstars,
+ abandoned the obsolete source for male pornstars, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-08-28
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.89.
+ 
+
+
+- \*
+ 
+ 2006-06-19
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.79.
+ 
+
+
+- \*
+ 
+ 2006-05-22
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.75.
+ 
+
+
+- \*
+ 
+ 2006-05-15
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.74.
+ 
+
+
+- \*
+ 
+ 2006-05-01
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.72.
+ 
+
+
+- \*
+ 
+ 2006-04-24
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.71.
+ 
+
+
+- \*
+ 
+ 2006-04-17
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.70.
+ 
+
+
+- \*
+ 
+ 2006-04-10
+ 
+ Introduced in Acme-MetaSyntactic version 0.69.
+ 
+
+
+- \*
+ 
+ 2006-03-10
+ 
+ The irc logs from 2005 (see below) prove that I have a bad memory (and
+ this is why logs are a good thing, if you care about the useless minutiae)
+ when I claim that Maddingue was the one who offered the first Wikipedia
+ link for scraping porn star names. I also claimed that publishing in
+ version 0.69 was his idea. At this point, I do not trust my former self.
+ 
+
+
+- \*
+ 
+ 2005-08-24
+ 
+ The \ ``pornstars``\  theme is ready to be published. More than eight months
+ in advance, it's already clear that the first distribution holding it
+ will be version 0.69, even though the information was never made public.
+ 
+ Some time before, it had been agreed that Sbastien would take
+ responsibility for the module. I haven't been able to find records for
+ that yet.
+ 
+
+
+- \*
+ 
+ 2005-05-17
+ 
+ When an italian Perl monger annouced he had to write a pornographic web
+ site, and another asked which variable he would use, \ ``osfameron``\ 
+ immediately thought about `Acme::MetaSyntactic <http://search.cpan.org/search?query=Acme%3a%3aMetaSyntactic&mode=module>`_, and investigated the
+ \ ``meta``\  bot:
+ 
+ 
+ .. code-block:: perl
+ 
+      15:06 <@osfameron> meta porno
+      15:06 <+meta> osfameron: No such theme: porno
+      15:07 <@guillomovitch> meta pr0n
+      15:07 <+meta> guillomovitch: No such theme: prn
+      15:07 <@rgs> osfameron: patches welcome
+      15:07 <+purl> Of course, you really mean FOAD, HAND, HTH
+      15:07 <@osfameron> heh
+      15:08 <@osfameron> un des italiens a dit qu'il doit creer un site porn
+      15:08 <@osfameron> un autre lui a demande' ce qui utilisera comme noms de variables
+      15:08 <@osfameron> j'ai pense' a AMS..
+ 
+ 
+ Later in the day, a discussion about people's porn star names
+ (name of your first childhood pet, along with the name of the first
+ street where you grew up) quickly derailed into the idea of making
+ \ *Acme::MetaSyntactic::pornstarname*\ , which would list the "porn star
+ names" of famous Perl hackers.
+ 
+ \ ``rgs``\  offered the first Wikipedia link. A few days later, \ ``grinder``\ 
+ tried to use the non-existent theme, and \ ``rgs``\  complained about its
+ absence.
+ 
 
 
 
@@ -81,1142 +485,670 @@ SEE ALSO
 name = 'pornstars'
 DATA = '''\
 # names female
-Abigail_Clayton
-Adara_Michaels
-Addison_Rose
-Adele_Stevens
-Adriana_Sage
-Adrienne_Bellaire
-Africa_Sexxx
+Abella_Danger
+Adriana_Chechik
+Adrianna_Luna
 Ai_Iijima
-Aimee_Sweet
+Aino_Kishi
+Air_Force_Amy
 Aja
-Akira_Fubuki
+AJ_Applegate
+Akari_Asahina
+Akiho_Yoshizawa
 Alana_Evans
-Alaura_Eden
-Alex_Dane
-Alex_Jordan
-Alex_Taylor
-Alexa_May
-Alexa_Rae
-Alexa_Weix
-Alexandra_Nice
+Aleska_Diamond
+Alexandra_Quinn
 Alexandra_Silk
 Alexis_Amore
-Alexis_DeVell
-Alexis_Malone
-Alexis_May
-Alicia_Alighatti
-Alicia_Monet
-Alicia_Rhodes
-Alicia_Rio
+Alexis_Texas
+Alex_Taylor
+Alia_Janine
+Alina_Plugaru
 Alisha_Klass
-Alison_Angel
-Aliyah_Yi
-Allie
-Allie_Sin
-Allison_Wyte
+Allie_Haze
 Ally_Mac_Tyana
-Allysin_Chaynes
+Amarna_Miller
 Amber_Lynn
-Amber_Michaels
-Amber_Rain
-Amber_Rose
-Anastasia_Blue
-Anastasia_Christ
-Andi_Pink
-Andrea_Butjko
+Amber_Rayne
+Amy_Fisher
 Andrea_True
-Aneta_Smrhova
-Angel_Dark
-Angel_Kelly
-Angel_Long
-Angela_Baron
-Angela_Devi
-Angela_Haze
-Angela_Tiger
+Andy_San_Dimas
+Angela_White
 Angelica_Bella
-Angelica_Costello
-Angelica_Sin
-Angelina_Crow
-Anika_Fox
-Anita_Blond
-Anita_Dark
-Anja_Juliette_Laval
-Anjali_Kara
-Ann_Marie
-Anna_Malle
-Anna_Marek
-Anna_Nova
-Anna_Ohura
-Anna_Ventura
+Angelina_Armani
+Angel_Kelly
+Anikka_Albrite
+Anksa_Kara
 Annabel_Chong
-Anne_Howe
+Anna_Bell_Peaks
+Anna_Malle
+Anna_Polina
 Annette_Haven
-Annie_Cruz
+Annette_Schwarz
 Annie_Sprinkle
-Annie_Swanson
-April_Summers
-Arcadia_Lake
+April_Flores
+April_O_Neil
 Aria_Giovanni
 Ariana_Jollee
-Arsen_Wenger
+Asa_Akira
+Asami_Jo
+Asami_Sugiura
 Ashley_Blue
 Ashley_Long
 Ashlyn_Gere
-Ashton_Moore
+Ashlynn_Brooke
 Asia_Carrera
-Aspen_Stevens
-Asuka_Sakamaki
 Audrey_Hollander
+August_Ames
 Aurora_Snow
-Austin_Kincaid
-Austin_O_Riley
-Autumn_Jade
-Ava_Devine
-Ava_Nova
-Ava_Ramone
 Ava_Vincent
-Avena_Lee
-Avy_Scott
-Aya_Otosaki
-Ayana_Angel
-Azlea_Antistia
-Azumi_Kawashima
-Bambi_Blaze
+Baby_Pozzi
 Bambi_Woods
-Bamboo
 Barbara_Dare
-Barbara_Summer
-Barbie_Griffin
 Belladonna
-Betty_G
-Beverley_Cocks
-Beverly_Lynne
-Bianca_Biaggi
-Bianca_Pureheart
-Bianca_Trump
-Bibi_Fox
-Bionca
-Black_Diamond
-Black_Widow
-Blair_Segal
-Blondie_Bee
-Bobbi_Billard
+Belle_Knox
+Bibian_Norai
+BiBi_Jones
 Bobbi_Eden
+Bobbi_Starr
 Bodil_Joensen
-Bonita_Saint
-Boo_D_Licious
+Bonnie_Rotten
 Brandi_Love
-Brandi_Lyons
-Brandi_Wine
-Brandy_Alexandre
-Brandy_Bosworth
-Brandy_Starz
-Brandy_Talore
-Breanne
+Brandy_Aniston
+Bree_Olson
 Briana_Banks
-Brianna_Rai
-Bridget_the_Midget_Powerz
-Bridgette_Belle
+Bridget_Powers
 Bridgette_Kerkove
-Bridgette_Monet
-Bridgette_Monroe
+Brigitta_Bulgari
 Brigitte_Lahaie
-Britney_Rears
 Brittany_Andrews
-Brittany_Blue
-Brittany_Stryker
-Brittney_Skye
-Brooke_Ashley
-Brooke_Biggs
-Brooke_Milano
-Brooke_West
-Buffy_Davis
+Brittany_O_Connell
+Britt_Morgan
+Brooklyn_Lee
 Bunko_Kanazawa
-Bunny_Bleu
-Bunny_Luv
-Cailey_Taylor
 Calli_Cox
-Cameron_Cain
-Cameron_James
 Candida_Royalle
-Candie_Evans
+Candy_Apples
 Candy_Barr
-Candy_Manson
-Candy_Samples
-Cara_Lott
-Careena_Collins
+Candye_Kane
+Capri_Anderson
 Caressa_Savage
-Carmella_Bing
-Carmen_Hayes
+Carmen_Hart
 Carmen_Luvana
 Carol_Connors
-Carol_Cummings
-Caroline_Pierce
-Casey_James
-Cassandra_Wild
-Catalina_Cruz
-Celeste
+Carter_Cruise
+Casey_Calvert
+Cathy_Barry
+Cathy_Stewart
 Celia_Blanco
-Champagne
-Charlene_Aspen
-Charlie_Angel
-Charlie
-Charlie_Style
-Charlotte_Stokely
-Charmaine_Sinclair
+Celine_Bara
+Chanel_Preston
 Charmane_Star
 Chasey_Lain
-Chaz
 Chelsea_Charms
-Cheri_Lai
-Cherie
-Cherokee
-Cherry_Lee
-Cherry_Poppens
-Cherry_Potter
-Cherry_Rain
-Cherry_Rose
-Chessie_Moore
-Cheyenne_Silver
 Chloe
-Chloe_Dior
-Chloe_Foxxx
 Chloe_Jones
-Chloe_Vevrier
-Chocolate
-Chris_Cassidy
-Christi_Lake
-Christie_Lee
-Christina_Noir
-Christine_Allure
-Christine_Young
 Christy_Canyon
-Cicciolina
-Ciera_Sage
-Cindy_Crawford
-Cindy_Miel
+Christy_Mack
+C_J_Laing
 Clara_Morgane
-Claudia_Ferrari
-Claudia_Jamsson
-Claudia_Rossi
-Claudine_Beccarie
-Colette_Choisez
-Constance_Money
-Corina_Taylor
-Cris_Cassidy
-Cris_Taliana
-Crissy_Cums
+Coralie
+Crave
 Crissy_Moran
-Cristina_Bella
-Crystal_Breeze
-Crystal_Craft
-Crystal_Holland
-Crystal_Klein
-Crystal_Knight
-Crystal_Ray
-Crystal_Steal
-Cynara_Fox
-Cyndee_Summers
 Cytherea
 Daisy_Marie
-Dana_Dylan
-Dana_Lynn
+Dana_DeArmond
 Dana_Vespoli
-Dani_Woodward
-Daniella_Rush
+Dani_Daniels
 Danni_Ashe
-Daphne_Rosen
-Darla_Crane
-Dasha
 Debi_Diamond
-Deborah_Wells
-Deidre_Holland
-Demi_Marx
-Denise_Masino
-Desire_Vinci
+Demi_Delia
+Denice_Klarskov
 Desiree_Cousteau
-Desiree_West
-Destiny_Deville
-Destiny_Summers
-Deven_Davis
-Devin_DeRay
 Devinn_Lane
 Devon
-Devon_Michaels
-Diana_Devoe
-Dina_Jewel
-Dolly_Buster
-Dominique_Simone
-Donita_Dunes
-Dora_Venter
-Dorothy_Le_May
+Dolly_Golden
+Domonique_Simone
 Draghixa
-Dru_Berrymore
 Dyanna_Lauren
-Ebony_Ayes
-Eden_Alaura
-Elizabeth_Del_Mar
-Elizabeth_Lawrence
-Emma_Nixon
-Emma_Starr
-Erica_Bella
+Dylan_Ryan
+Dylan_Ryder
+Edelweiss
+Elly_Akira
+Emanuelle_Cristaldi
 Erica_Boyer
-Erica_Campbell
+Erica_Ellyson
+Erin_Brown
 Estelle_Desanges
 Eva_Angelina
-Eva_Black
 Eva_Henger
 Eve_Angel
-Eve_Laurence
-Evelyn_Janaei
-Fallon
-Fallon_Sommers
 Felecia
-Felecia_Fox
+Felicia_Fox
 Felicia_Tang
-Felix_Vicious
-Flame
-Flick_Shagwell
-Flower_Tucci
-Fovea
-Foxy_Lady
-Friday
-Fujiko_Kano
-Gail_Lawrence
+Fiona_Richmond
+Francesca_Le
 Gauge
-Gen_Padova
-Genevieve_Elise_Silva
-Georgette_Neale
-Georgina_Lempin
 Georgina_Spelvin
-Ghost_Angel
-Gia_Jordan
-Gia_Paloma
 Gianna_Michaels
-Gina_Carrera
 Gina_Lynn
-Gina_Ryder
 Gina_Wild
 Ginger_Lynn
-Gloria_Guida
 Gloria_Leonard
-Greta_Milos
-Gwen_Summers
-Haley_Paige
-Hannah_Harper
-Haven
-Heather_Harmon
 Heather_Hunter
-Helga_Sven
+Heather_Vandeven
 Hillary_Scott
-Holly_Body
-Holly_McCall
-Holly_Page
-Holly_Wellin
-Honey_Wilder
+Holly_Ryder
+Holly_Sampson
 Houston
-Hyapatia_Lee
-Ice_La_Fox
-Inari_Vachs
 India
-Isabella_Camille
-Isabella_Soprano
-Isis_Nile
-JR_Carrington
-Jackie_Ashe
-Jackie_Moore
-Jacqueline_Lorians
 Jada_Fire
-Jade_East
-Jade_Hsu
-Jade_Marcela
-Jaimee_Foxworth
-Jamie_Brooks
-Jamie_Summers
-Jana_Cova
-Jana_Miartusova
-Jane_Darling
-Janet_Jacme
-Janette_Littledove
-Janey_Robbins
+Jada_Stevens
+Jade_Laroche
+Jana_Bach
 Janine_Lindemulder
 Jasmin_St_Claire
-Jasmine_Byrne
-Jasmine_Lynn
-Jasmine_Tame
-Jassie_James
-Jaye_Starr
-Jayna_Oso
-Jazmin
 Jeanna_Fine
+Jeannie_Pepper
 Jelena_Jensen
-Jenaveve_Jolie
 Jenna_Haze
 Jenna_Jameson
-Jennifer_Andersson
-Jennifer_Luv
-Jennifer_Noxt
-Jenteal
-Jesse_Capelli
+Jenna_Presley
+Jessa_Rhodes
 Jesse_Jane
-Jessica_Darlin
-Jessica_Dee
 Jessica_Drake
-Jessie_St_James
+Jessica_Jaymes
+Jessie_Andrews
+Jessie_Rogers
 Jewel_De_Nyle
-Jezebelle_Bond
+Jillian_Janson
 Jill_Kelly
+Jiz_Lee
 Joanna_Angel
-Joanne_Jo_Guest
 Jodie_Moore
-Joelean
-Johnni_Black
-Jordan_Capri
-Jordan_Haze
-Jordan_Lee
-Joselyn_Pink
-Joy_Kiss
-Judy_Star
-Juli_Ashton
+Judy_Minx
+Julia_Alexandratou
 Julia_Ann
-Julia_Bond
 Julia_Channel
-Julia_Parton
+Juli_Ashton
+Julie_K_Smith
 Julie_Meadows
-Julie_Night
-Julie_Silver
-Julie_Strain
 Juliet_Anderson
 Justine_Joli
-Kacey
 Kaitlyn_Ashley
-Kandi_Barbour
-Karen_Dior
 Karen_Lancaume
-Karen_Summers
-Karin_Schubert
-Karina_Kay
-Kascha_Papillon
-Katalyn_Cica
-Kate_Frost
-Katerina_Konec
-Kathy_Willets
-Katie_Gold
+Karen_Summer
 Katie_Morgan
+Katja_K
 Katja_Kassin
-Katja_Kean
-Katja_Love
-Katrina_Kraven
-Katsumi
-Kawashima_Azumi
-Kay_Parker
-Kayla_Marie
+Katsuni
+Kayden_Kross
 Kaylani_Lei
-Kaylynn
-Keiko_Nakazawa
-Keisha
-Kelle_Marie
-Kelly_Erikson
-Kelly_Kline
-Kelly_Kroft
-Kelly_Nichols
-Kelly_O_Dell
+Kay_Parker
+Kei_Mizutani
+Kelli_McCarty
+Kelly_Madison
 Kelly_Trump
-Kelly_Wells
-Kelsey_Michaels
-Keri_Sable
-Kerry_Marie
-Kianna_Dior
-Kikki_Daire
-Kiko_Wu
-Kim_Angeli
+Kendra_Jade_Rossi
+Kendra_Lust
+Kimberly_Kane
 Kim_Chambers
-Kim_Eternity
-Kimberly_Carson
-Kinzie_Kenner
-Kira_Kener
+Kirsten_Price
 Kitten_Natividad
-Kitty_Marie
-Kitty_Yung
+Kleio_Valentien
 Kobe_Tai
-Krista_Lane
-Kristara_Barrington
 Kristi_Myst
-Krystal_de_Boor
-Krystal_Steal
-Krysti_Lynn
-Kyla_Cole
 Kylie_Ireland
-Lacey_Duvalle
-Lanny_Barbie
+Lacy_Rose
+Laly
 Lara_Roxx
-Laura_Angel
-Laura_Gemser
-Laure_Sainclair
+Lauren_Brice
 Lauren_Phoenix
-Layla_Jade
+Laure_Sainclair
 Lea_De_Mae
-Lea_Walker
-Leanna_Foxxx
-Leanna_Heart
-Leanni_Lei
 Leena
-Lene_Hefner
-Leslie_Bovee
+Leonie
 Letha_Weapons
-Lexie_Marie
-Lexus_Locklear
-Lillian_Tiger
-Lily_Thai
+Lexi_Belle
+Lezley_Zen
+Lilli_Carati
+Lily_Carter
+Lily_LaBeau
 Linda_Lovelace
-Linda_Lust
-Linda_Thoren
 Linda_Wong
 Linsey_Dawn_McKenzie
 Lisa_Ann
 Lisa_De_Leeuw
-Lisa_K_Loring
-Lisa_Sparxxx
-Little_Oral_Annie
-Liz_Harvey
-Liz_Honey
-Liz_Vicious
-Liza_Harper
-Logan_LaBrent
-Lois_Ayres
+Liza_del_Sierra
+Lizz_Tayler
+Lizzy_Borden
+Lollipop
 Lolo_Ferrari
-Loni_Sanders
-Lorelei
-Loretta_Loren
-Lori_Alexia
-Lou_Valmont
-Lovette
-Lucie_Stratilova
-Lucy_Lee
-Lucy_Thai
-Luna_Lane
-Lyla_Lei
-Lynda_Leigh
-Madison_Stone
-Makayla_Coxxx
-Mai_Lee
-Mai_Lin
-Maia_Ginger
-Mandi_Wine
+Lorelei_Lee
+Lucia_Lapiedra
+Lulu_Devine
+Lupe_Fuentes
+Maddy_O_Reilly
+Madison
+Madison_Young
 Mandy_Bright
-Maria_Tortuga
-Mariah_Kekkonen
+Maria_Ozawa
+Marica_Hase
 Marilyn_Chambers
-Marketa_Brymova
-Mary_Anne
+Mari_Possa
+Marlene_Willoughby
 Mary_Carey
-Mary_Millington
 Marylin_Star
-Maya_Gold
-McKayla_Matthews
-McKenzie_Lee
-Megan_Jones
+Mary_Millington
+Maxi_Mounds
+May_Ling_Su
 Megan_Leigh
-Megan_Martinez
-Melanie_Jagger
-Melissa_Ashley
-Melissa_Harrington
 Melissa_Hill
-Melissa_Lauren
-Melissa_Milano
-Melissa_Walker
-Melody_Love
-Melody_Max
-Mercedesaka_Eva_Black
-Mercedez
-Mia_Smiles
-Michaela_Schaffrath
-Michele_Evette_Watley
-Michelle_Barrett
-Michelle_Monaghan
+Melissa_Midwest
+Melissa_Monet
+Mia_Khalifa
+Mia_Malkova
+Mia_Rose
+Michelle_Maylene
 Michelle_Thorne
 Michelle_Wild
-Micka_French
+Micky_Lynn
 Midori
 Mika_Tan
-Miko_Lee
+Milly_D_Abbraccio
 Mimi_Miyagi
-Mindy_Rae
-Mindy_Vega
-Minka
-Miriam_Gonzalez
-Miss_Arroyo
 Missy
-Missy_Monroe
-Mistress_Yvette
+Misti_Dawn
 Misty_Rain
+Misty_Stone
 Moana_Pozzi
-Mocha
-Molly_Rome
-Monica_Cameron
+Monica_Mattos
 Monica_Mayhem
-Monica_Sweet
-Monica_Sweetheart
 Monique_Alexander
-Monique_DeMoan
-Mya_Mason
-Mysti_May
-Nadia_Nyce
-Naomi
-Natasha_Yi
-Naughty_Allie
-Naughty_Alysha
-Nautica_Thorn
-Nena_Cherry
-Nichola_Holt
+Mya_Diamond
+Nana_Natsume
+Nao_Oikawa
+Nao_Saejima
+Nica_Noelle
 Nici_Sterling
 Nicki_Hunter
-Nicole_Lace
-Nicole_Sheridan
-Nikita_Denise
-Nikki_Anderson
+Niki_Belucci
+Nikita_Gross
 Nikki_Benz
-Nikki_Carlisle
 Nikki_Charm
+Nikki_Delano
 Nikki_Dial
-Nikki_Diamond
-Nikki_Fairchild
-Nikki_Fritz
-Nikki_Hunter
-Nikki_Knights
-Nikki_Nova
-Nikki_Park
-Nikki_Rider
 Nikki_Tyler
-Nikky_Blond
-Nina_DePonca
 Nina_Hartley
-Nina_Mercedez
-Nyomi_Marcela
-O
-Obsession
-Olinka_Ferova
+Nina_Roberts
+Nozomi_Momoi
+Nyomi_Banxxx
 Olivia_Del_Rio
-Olivia_O_Lovely
-Olivia_Saint
-Ona_Zee
 Ovidie
-PJ_Sparxx
-Paizley_Adams
-Pandora_Peaks
-Paris_Showers
-Pason
-Patti_Petite
-Penelope_Black_Diamond
+Patricia_Kimberly
+Patricia_Rhomberg
+Pauline_Chan
 Penny_Flame
-Penny_Porsche
-Persia
-Phyllisha_Anne
-Phoenix_Ray
-Pixie
+Penny_Pax
+P_J_Sparxx
 Poppy_Morgan
 Porsche_Lynn
-Porsha_Blaze
-Rachel_Aziani
-Rachel_Rotten
-Rachel_Ryan
-Racquel_Darrian
-Rakel_Liekki
-Randi_Wright
+Princess_Donna
+Prinzzess
+Priya_Rai
+Puma_Swede
+Raffaela_Anderson
 Raven_Riley
 Raylene
-Rayveness
-Rebecca_Cummings
+RayVeness
+Rebeca_Linares
+Rebecca_Bardoux
+Rebecca_Brooke
 Rebecca_Lord
-Rebecca_Wild
-Red_Heaven
-Reika
+Rebecca_More
+Remy_LaCroix
 Rene_Bond
-Rene_Tiffany
-Renee_LaRue
-Renee_Pornero
-Rikki_Anderson
-Riley_Mason
-Rita_Faltoyano
-Rocki_Roads
-Ronni_Tuscadero
-Roxanne_Hall
-Roxetta
-Roxy_Jezel
-Roxy_Rush
-Sabina_Black
-Sabrina_Johnson
-Sabrine_Maui
-Sakura_Sena
-Samantha_Fox
-Samantha_Sterlyng
-Samantha_Strong
-Sandee_Westgate
-Sandra_Romain
-Sandra_Shine
-Sandy
-Saphire_Rae
-Sara_Jay
-Sarah_Blue
-Sarah_Louise_Young
-Sarah_Twain
-Sativa_Rose
-Savanna_Samson
+Rhonda_Jo_Petty
+Riley_Reid
+Riley_Steele
+Rin_Aoki
+Roberta_Gemma
+Robin_Byrd
+Roxy
+Salma_de_Nora
+Samantha_Bentley
+Samantha_Saint
+Sandy_Dempsey
+Saori_Hara
+Sasha_Grey
+Satine_Phoenix
 Savannah
+Savanna_Samson
+Scarlet_Young
 Seka
 Selen
-Selena_Silver
 Selena_Steele
 Serena
 Serenity
-Shakina_Shergold
-Shanna_McCullough
-Sharka_Blue
-Sharon_Kane
+Sexy_Cora
+Shakeela
+Shane
 Sharon_Mitchell
 Shauna_Grant
-Shay_Sweet
+Shawna_Lenee
 Shayla_LaVeaux
-Shyla_Foxxx
 Shyla_Stylez
-Sierra
+Shy_Love
 Silvia_Saint
-Simone
-Simony_Diamond
-Sindee_Coxx
-Sinderella
-Sky_Lopez
-Sophia_Ferrari
-Sophia_Rossi
-Sophie_Deei
+Sinnamon_Love
+Sinn_Sage
+Skin_Diamond
+Sola_Aoi
+Sonia_Baby
+Sophie_Anderson
 Sophie_Evans
-Sophie_Moone
-Spring_Thomas
 Stacey_Donovan
-Stacy_Burke
 Stacy_Valentine
-Stephanie_Bellars
 Stephanie_Swift
-Stormy
-Summer_Cummings
+Stormy_Daniels
+Stoya
+Sunny_Lane
 Sunny_Leone
-Sunny_Rain
 Sunrise_Adams
 Sunset_Thomas
-Sunshine_Nee
-Susan_Nero
-Suzie_Carina
-Sydney_Moon
-T_J_Hart
+Sydnee_Steele
 Tabatha_Cash
-Tabatha_Jordan
 Tabitha_Stevens
-Taija_Rae
-Tammi_Ann
+Tamaki_Katori
 Tania_Russof
 Tanya_Hansen
-Tanya_James
-Tawnee_Stone
+Tanya_Tate
+Tarra_White
+Taryn_Thomas
+Tasha_Reign
+Tatum_Reed
 Tawny_Roberts
-Tawny_Pearl
 Taylor_Hayes
-Taylor_Hill
-Taylor_Lyn
-Taylor_Rain
-Taylor_St_Clair
+Taylor_St_Claire
 Taylor_Wane
 Teagan_Presley
-Teanna_Kai
-Teena_Fine
-Temptress
-Tera_Heart
 Tera_Patrick
-Teresa_May
-Teresa_Scott
-Teri_Diver
+Tera_Wray
+Tericka_Dye
 Teri_Weigel
-Terri_Summers
-Texas_Presley
-Tia_Bella
-Tia_Tanaka
 Tianna
-Tianna_Lynn
-Tiffany_Diamond
-Tiffany_Holiday
-Tiffany_Hopkins
-Tiffany_May
 Tiffany_Million
 Tiffany_Mynx
-Tiffany_Rayne
-Tiffany_Rose
-Tiffany_Teen
-Tiffany_Towers
-Tiffany_Walker
-Timea_Vagvolgyi
 Tina_Cheri
-Tina_Fine
-Tori_DeLuca
-Tori_Welles
+Tina_Yuzuki
+Toppsy_Curvey
+Tori_Black
 Tory_Lane
-Tove_Jensen
-Tracey_Adams
 Traci_Lords
 Tricia_Devereaux
-Trinity_Loren
-Trixie_Teen
-Tyffany_Million
-Tyla_Wynn
-Tyler_Faith
-Uschi_Digard
-Valentina_Vaughn
+Tristan_Taormino
+Tylene_Buck
+Tyra_Misoux
+Valentina_Nappi
 Vanessa_Blue
-Vanessa_Chase
-Vanessa_Del_Rio
-Vanessa_Lane
-Vanessa_McKenzie
-Velicity_Von
-Velvet_Rose
-Venus
-Veronica_Carso
+Vanessa_del_Rio
+Venere_Bianca
+Veronica_Avluv
 Veronica_Hart
-Veronica_Moser
-Veronika_Raquel
-Veronika_Simon
-Veronika_Zemanova
 Vicky_Vette
-Victoria_Givens
-Victoria_Knight
 Victoria_Paris
-Victoria_Sweet
 Victoria_Zdrok
-Vida_Garman
 Violet_Blue
-Watase_Akira
-Wendy_Jaymes
-Wendy_Whoppers
-Wifey
-Yana_Cova
-Yulia_Nova
-Yvette_Wilde
+Viper
+Vittoria_Risi
+Vivian_Schmitt
+Wiska
+Yasmine_Lafitte
+Yua_Aida
+Yuma_Asami
+Yuri_Komuro
 Zara_Whites
-Zdenka
-Zsanett_Egerhazi
 # names male
-Adam_Wilde
-Al_Borda
-Alain_Deloin
-Alberto_Rey
-Alec_Metro
-Ales_Hanak
-Alex_Rox
-Alex_Sanders
-Alexander_Devoe
+Aaron_Lawrence
+Aiden_Shaw
+Alban_Ceray
 Alexandre_Frota
-Andre_Chazel
-Andrea_Nobili
+Alex_Sanders
+Anthony_Crane
+Arpad_Miklos
 Barrett_Blade
-Barry_Wood
 Ben_Dover
-Ben_English
-Ben_Hardy
-Benjamin_Brat
-Big_Herc
-Biggz
-Biff_Malibu
-Billy_Banks
+Billy_Brandt
 Billy_Dee
 Billy_Glide
-Bobby_Blake
+Billy_Herrington
+Blake_Harper
+Blake_Palmer
+Bobby_Astyr
+Bobby_Hollander
 Bobby_Vitale
-Boz
 Brad_Armstrong
-Brandon_Iron
-Brett_McCoy
-Brett_Rockman
+Bradford_Thomas_Wagner
+Brad_Patton
+Brandon_Lee
+Brendon_Miller
+Bret_Wolfe
 Brian_Pumper
-Brian_Surewood
-Brick_Majors
-Brock
-Bruno_Sx
-Brutus_Black
 Buck_Adams
-Byron_Long
-Cal_Jammer
-Captain_Bob
-Carlos_Krystal
-Carmelo_Petix
-Chance_Ryder
-Cheyne_Collins
-Chris_Cannon
-Chris_Charming
-Chris_Evans
-Chris_small_package_Marshman
+Cameron_Jackson
+Carter_Stevens
+Casey_Donovan
+Chad_Knight
+Charles_Dera
+Chocoball_Mukai
+Choky_Ice
+Chris_Steele
+Christian_XXX
 Christoph_Clark
-Claudio_Meloni
-Colt_Steele
+Cole_Taylor
+Cole_Tucker
+Cole_Youngblood
+Colton_Ford
 Dale_DaBone
-Daniel_Espinoza
-Daniel_Kane
-Daniel_Thuerrigl
+Danny_Mountain
+Danny_Wylde
 Darren_James
 Dave_Cummings
-Dave_Hardman
-David_Christopher
-David_Cahse
-David_Perry
-David_Ruby
-Deep_Threat
-Devlin_Weed
-Dez
-Dick_Dashton
-Dick_Delaware
-Dick_Nasty
-Dick_Rambone
-Dillion_Day
-Dino_Bravo
-Dino_Toscani
+David_Aaron_Clark
+Dawson
+Derek_Hay
+Derrick_Pierce
+Dick_Smothers_Jr
+Diesel_Washington
+Dillon_Day
 Don_Fernando
-Don_Hollywood
-Donny_Long
+Dylan_Vox
+Eddie_Stone
 Ed_Powers
-Ed_Luistro
-Eduardo_Yanez
-Elone_Disere
-Eric_Manchester
-Eric_Masterson
-Eric_Price
+Eric_Edwards
+Eric_Stryker
 Erik_Everhard
-Etienne_Jaumillot
+Erik_Rhodes
+Evan_Seinfeld
 Evan_Stone
-Frankie_Jay
-Falcon_X
-Ficky_Martin
-FM_Bradley
-Francesco_Malcom
-Franco_Roccaforte
-Franco_Trentalance
-Francois_Papillon
-Frank_Gun
-Frank_Major
-Frank_Shaft
-Frank_Towers
-Frankie_Versace
-Gene_Ross
+Flash_Brown
+Flex
+Francois_Sagat
+Fred_Halsted
+Fred_J_Lincoln
+Fredrik_Eklund
 George_Payne
 George_Uhl
-Gerard_Luig
-Gigantua
-Gilbert_Servien
-Gino_Greco
-Greg_Rome
-Greg_Centauro
-Guy_Bonnafoux
-Guy_DaSilva
-Guy_Masse
-Hank_Rose
+Gunner_de_Medici
 Harry_Reems
-Henry_Pachard
+Harry_S_Morgan
+Henry_Saari
 Herschel_Savage
-HPG
-Ian_Daniels
+Holly_One
 Ian_Scott
-Iron_Lee
-Jack_Baker
-Jack_Bravo
-Jack_Hammer
 Jack_Napier
-Jack_Surf
-Jack_Wrangler
-Jacques_Insermini
-Jake_Ryan
-Jake_Steed
-James_Bonn
-James_Brossman
+Jack_Radcliffe
+James_Deen
 Jamie_Gillis
-Jan_Olav_Norberg
-Jason_Zupalo
-Jasper_Wade
-Jay_Ashley
-Jay_Crew
-Jean
-Jean_Pierre_Armand
-Jean_Louis
-Jean_Roche
-Jean_Yves_LeCastel
+Jason_Hawke
+Jay_Grdina
+Jean_Val_Jean
+Jeff_Palmer
 Jeff_Stryker
 Jeremy_Tucker
 Jerry_Butler
-J_J_Michaels
-Joachim_Kessef
-Joel_Lawrence
-Joey_Ray
-Joey_Hafley
+Jesse_Santana
 Joey_Silvera
-John_Dough
+John_Bailey
+John_B_Root
 John_Holmes
 John_Leslie
-Johnny_Nineteen
-John_Slovak
+Johnnie_Keyes
+Johnny_Hazzard
+Johnny_Rahm
+Johnny_Sins
 John_Stagliano
 John_Strong
-John_West
+Jonathan_De_Falco
 Jonathan_Morgan
-Jonathan_Stern
 Jon_Dough
-Johnny_Depth
-Jolth_Walton
+Jon_Vincent
+Jordi_El_Nino_Polla
+Josh_Weston
 Jules_Jordan
-Julian
-Juliano_Ferraz
-Julian_St_Jox
-Justin_Berry
 Justin_Slayer
-Kato_Kalin
+Keiran_Lee
+Keni_Styles
 Ken_Ryker
-Kid_Jamaica
+Ken_Shimizu
+Kevin_James
+Kostas_Gousgounis
+Kristen_Bjorn
 Kurt_Lockwood
-Kyle_Stone
-Lee_Stone
-Leslie_Taylor
-Lex_Baldwin
+Leo_Ford
 Lexington_Steele
-Luc_Wylder
-Mr_18_inch
+Logan_McCree
+Long_Dong_Silver
+Luka_Magnotta
+Lukas_Ridgeston
 Mandingo
 Manuel_Ferrara
-Marc_Cummings
+Manu_Pluton
+Marco_Banderas
 Marc_Stevens
 Marc_Wallice
-Marco_Duato
-Mario_Rossi
-Mark_Anthony
-Mark_Ashley
+Mark_Dalton
 Mark_Davis
-Mark_Sloan
-Mark_Wood
-Marty_Romano
-Matt_Drake
+Matthew_Rush
+Matt_Sanchez
 Max_Hardcore
+Michael_Brandon
+Michael_Gaunt
 Michael_J_Cox
+Michael_Lucas
+Michael_Morrison
 Michael_Stefano
-Mike_Feline
-Mike_Foster
+Mick_Blue
+Micky_Yanai
+Mike_Adriano
+Mike_Dreyden
 Mike_Horner
-Mike_Ranger
+Mike_John
 Mike_South
-Mickey_G
-Miles_Malone
-Mr_Lothar
+Miles_Long
 Mr_Marcus
 Mr_Pete
 Nacho_Vidal
-Nat_Turnher
-Nick_East
-Nick_Lang
 Nick_Manning
-Nikko_Knight
-Matt_Bixel
-Neeo
-Pascal_Saint
+Omar_Galanti
 Pat_Myne
-Paul_Barresi
-Paul_Cox
+Patrick_Collins
+Paul_Baxendale
 Paul_Thomas
-Peter_Foster
-Peter_Ho
+Peter_Berlin
 Peter_North
-Peter_Shaft
 Philippe_Dean
-Philippe_Soine
-Pier_Evergreen
 Pierre_Woodman
-Preston_Parker
+Prince_Yahshua
+Ramon_Nomar
+Randy_Cochran
 Randy_Spears
 Randy_West
-Ray_Victory
-Remigio_Zampa
-Ricardo_Bell
-Richard_Langin
-Rich_Handsome
-Rick_Masters
-Rick_Lee
-Rob_Rotten
-Robbie_James
-Robert_Darcy
-Robert_Rosenberg
-Roberto_Malone
-Rod_Danger
-Rodney_Moore
-Ronnie_Coxx
-Rocco_Rizzoli
-Rocco_Siffredi
-Rod_Fontana
-Ron_Jeremy
-Ryan_Idol
+Raul_Cristian
+Ray_Dragon
+R_C_Horsch
+Rex_Chandler
+Richard_Holt_Locke
 Richard_Pacheco
-Samson_Biceps
-Sam_Strong
-Sascha
-Scott_Lyons
-Scott_Styles
+Rick_Cassidy
+Ricky_Martinez
+Ricky_Sinz
+R_J_Danvers
+Robert_Bullock
+Robert_Kerman
+Roberto_Malone
+Rob_Rotten
+Rocco_Reed
+Rocco_Siffredi
+Rod_Barry
+Rod_Fontana
+Rodney_Moore
+Ron_Hightower
+Ron_Jeremy
+Ryan_Driller
+Ryan_Idol
+Sasha_Gabor
+Scott_O_Hara
+Scott_Schwartz
 Sean_Michaels
-Sebastian_Barrio
-Sergio_Suarez
-Shane_Diesel
-Slim_Dawg
-Silvio_Evangelista
-Simon_Rex
-Skunk_Riley
-Sledge_Hammer
-Spyder_Jonez
-Stephen_Wolfe
+Sean_Paul_Lockhart
+Seth_Gamble
+Seymore_Butts
+Shigeo_Tokuda
+Sonny_Landham
+Stephen_Clancy_Hill
+Stephen_Geoffreys
+Steve_Drake
 Steve_Holmes
-Steve_Hooper
-Steve_York
-Steve_Powers
+Steven_Daigle
 Steven_St_Croix
-T_J_Cummings
-TT_Boy
+Stoney_Curtis
+Taka_Kato
+Thierry_Schaffauser
+Thom_Barron
+Tiger_Tyson
+Till_Kraemer
+Tim_Kramer
+Tim_Lake
+Tim_Von_Swine
+Titof
 Tom_Byron
-Tom_Cruiso
-Tony_DeSergio
-Tony_Everready
-Tony_Martino
-Tony_Michaels
-Toni_Ribas
+Tom_Judson
+Tommy_Gunn
+Tommy_Hansen
+Tommy_Pistol
+Tony_Ooki
 Tony_Tedeschi
-Tony_Sexton
-Trent_Tesoro
-Trevor_Zen
-Tyce_Bune
-Tyler_Knight
-Ty_Lattimore
-Tom_Shepard
-Valentino_Rey
-Van_Damage
-Van_Darkholme
+Torbe
+T_T_Boy
+Tyson_Cane
+Vidkid_Timo
+Vince_Rockland
 Vince_Vouyer
-Voodoo
-Walter_Midolo
-Wes_Bauer
+Wade_Nichols
+War_Machine
 Wesley_Pipes
-Will_Ravage
-Willi_Montana
-Willy_Braque
 Wilde_Oscar
-Woody_Long
-Yoshiya_Minami
-Yves_Baillat
-Yves_Callas
-Zake_Thomas
-Zensa_Raggi
-Zare_Prejaki\
+Will_Clark
+William_Margold
+Xander_Corvus
+Zak_Smith
+Zeb_Atlas\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -1224,14 +1156,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -1242,6 +1174,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -1253,7 +1186,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

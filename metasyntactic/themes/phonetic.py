@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #############################
 Acme::MetaSyntactic::phonetic
@@ -26,27 +24,111 @@ Most of them come from this list:
 `http://montgomery.cas.muohio.edu/meyersde/PhoneticAlphabets.htm <http://montgomery.cas.muohio.edu/meyersde/PhoneticAlphabets.htm>`_
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Michel Rodriguez provided the first list (NATO official phonetic alphabet).
+Michel Rodriguez, Philippe Bruhat (BooK), David Landgren, Gisbert W. Selke,
+Abigail, Olivier Mengu, Jean Forget.
 
-Added Swahili and English on request of David Landgren, thus closing
-RT ticket #14276.
-While I was at it, I also added French, German and Italian.
 
-Introduced in version 0.08, published on February 7, 2005.
+*******
+CHANGES
+*******
 
-Updated to handle multilingual phonetics in version 0.38,
-published on September 5, 2005.
 
-Updated (German fix by Gisbert W. Selke) in version 0.74, published on
-May 15, 2006.
 
-Updated with the Dutch list by Abigail in version 0.91, published on
-September 11, 2006.
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with small fixes for categories \ ``x-nato``\  and \ ``en``\ , and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2012-04-26
+ 
+ Jean Forget requested that "tare" is used instead of "tare" for the
+ English list (RT #50160).
+ 
+
+
+- \*
+ 
+ 2009-10-01
+ 
+ Olivier Mengu spotted a typo in the \ ``x-nato``\  list (RT #50160).
+ 
+
+
+- \*
+ 
+ 2006-09-11
+ 
+ Updated in Acme-MetaSyntactic version 0.91.
+ 
+
+
+- \*
+ 
+ 2006-09-10
+ 
+ Abigail sent a patch adding the Dutch list.
+ 
+
+
+- \*
+ 
+ 2006-05-15
+ 
+ Updated in Acme-MetaSyntactic version 0.74.
+ 
+
+
+- \*
+ 
+ 2006-05-10
+ 
+ Gisbert W. Selke sent a fix for the German version.
+ 
+
+
+- \*
+ 
+ 2005-09-05
+ 
+ Updated to handle multilingual phonetics in Acme-MetaSyntactic version 0.38
+ While I was at it, I also added French, German and Italian.
+ 
+
+
+- \*
+ 
+ 2005-08-23
+ 
+ David Landgren requested Swahili and English (RT #14276).
+ 
+
+
+- \*
+ 
+ 2005-02-07
+ 
+ Introduced in Acme-MetaSyntactic version 0.08.
+ 
+
+
+- \*
+ 
+ 2005-01-16
+ 
+ Michel Rodriguez provided the first list (NATO official phonetic alphabet).
+ 
+
 
 
 ********
@@ -62,12 +144,12 @@ DATA = '''\
 # default
 x-nato
 # names x-nato
-alpha   bravo charlie  delta echo foxtrot golf  hotel  india juliet  kilo
+alfa    bravo charlie  delta echo foxtrot golf  hotel  india juliett kilo
 lima    mike  november oscar papa quebec  romeo sierra tango uniform victor
 whiskey xray  yankee   zulu
 # names en
 Able Baker Charlie Dog   Edward Fox   George How  Item  Jiga   King    Love
-Mike Nan   Oboe   Peter  Queen  Roger Sugar  Tape Uncle Victor William X_Ray
+Mike Nan   Oboe   Peter  Queen  Roger Sugar  Tare Uncle Victor William X_Ray
 Yoke Zebra
 # names sw
 Ali    Banda  Chakechake Dodoma Entebe Fumba Gogo Homa Imba   Jambo KenyaLala
@@ -94,6 +176,7 @@ Willem  Xantippe Ypsilon IJsbrand Zaandam\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -101,14 +184,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -119,6 +202,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -130,7 +214,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

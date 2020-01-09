@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ################################
 Acme::MetaSyntactic::punctuation
@@ -26,16 +24,43 @@ This list is based on a browsing session starting from:
 `http://en.wikipedia.org/wiki/Punctuation <http://en.wikipedia.org/wiki/Punctuation>`_.
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Philippe "BooK" Bruhat.
+Philippe Bruhat (BooK), Abigail.
 
-Introduced in version 0.29, published on July 4, 2005.
 
-Updated by Abigail in version 0.91, publish on September 11, 2006.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-09-11
+ 
+ Updated by Abigail in Acme-MetaSyntactic version 0.91.
+ 
+
+
+- \*
+ 
+ 2005-07-04
+ 
+ Introduced in Acme-MetaSyntactic version 0.29.
+ 
+
 
 
 ********
@@ -95,6 +120,7 @@ pipe vertical_bar broken_bar\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -102,14 +128,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -120,6 +146,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -131,7 +158,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

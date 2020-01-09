@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #########################
 Acme::MetaSyntactic::pooh
@@ -45,14 +43,62 @@ CONTRIBUTORS
 ************
 
 
-Original contributor: Abigail (late October 2005)
+Abigail, Lon Brocard.
 
-Proposed independently a week later (early November 2005) by Leon Brocard,
-with a few additions.
 
-Introduced in version 0.61, published on February 13, 2006.
+*******
+CHANGES
+*******
 
-Updated in version 0.64, published on March 6, 2006.
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-03-06
+ 
+ Updated in Acme-MetaSyntactic version 0.64.
+ 
+
+
+- \*
+ 
+ 2006-02-16
+ 
+ Abigail sent a patch with a few additions.
+ 
+
+
+- \*
+ 
+ 2006-02-13
+ 
+ Introduced in Acme-MetaSyntactic version 0.61.
+ 
+
+
+- \*
+ 
+ 2005-11-03
+ 
+ Submitted independently by Leon Brocard, with a few additions.
+ 
+
+
+- \*
+ 
+ 2005-10-27
+ 
+ Submitted by Abigail.
+ 
+
 
 
 ********
@@ -75,6 +121,7 @@ Backson Henry_Pootel Henry_Rush Smallest_of_all Uncle_Robert\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -82,14 +129,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -100,6 +147,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -111,7 +159,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

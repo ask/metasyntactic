@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::planets
@@ -36,13 +34,60 @@ CONTRIBUTOR
 
 Abigail
 
-Introduced in version 0.63, published on February 27, 2006.
 
-Made multilingual in version 0.73, published on May 8, 2006.
+*******
+CHANGES
+*******
 
-Updated to 42 languages by Abigail in version 0.74, published on May 15, 2006.
 
-Updated to remove Pluto in version 0.89, published on August 28, 2006.
+
+- \*
+ 
+ 2012-05-07
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-08-28
+ 
+ Updated to remove Pluto in Acme-MetaSyntactic version 0.89.
+ 
+
+
+- \*
+ 
+ 2006-05-15
+ 
+ Updated to 42 languages by Abigail in Acme-MetaSyntactic version 0.74.
+ 
+
+
+- \*
+ 
+ 2006-05-08
+ 
+ Made multilingual in Acme-MetaSyntactic version 0.73.
+ 
+
+
+- \*
+ 
+ 2006-02-27
+ 
+ Introduced in Acme-MetaSyntactic version 0.63.
+ 
+
+
+- \*
+ 
+ 2005-10-27
+ 
+ Submitted by Abigail.
+ 
+
 
 
 ********
@@ -147,6 +192,7 @@ Merkur Venus Yer Mars Jupiter Saturn Uranus Neptun\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -154,14 +200,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -172,6 +218,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -183,7 +230,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

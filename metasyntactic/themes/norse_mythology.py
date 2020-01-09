@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ####################################
 Acme::MetaSyntactic::norse_mythology
@@ -12,7 +10,7 @@ NAME
 ****
 
 
-Acme::MetaSyntactic::norse_mythology - Characters from Norse mythology.
+Acme::MetaSyntactic::norse_mythology - Characters from Norse mythology
 
 
 ***********
@@ -23,18 +21,6 @@ DESCRIPTION
 A selection of characters from Norse mythology.
 
 
-***********
-CONTRIBUTOR
-***********
-
-
-Abigail
-
-Introduced in version 0.75, published on May 22, 2006.
-
-Updated by Jean Forget in version 0.80, published on June 26, 2006.
-
-
 *******
 SOURCES
 *******
@@ -43,17 +29,17 @@ SOURCES
 Among others:
 
 
-\*
+- \*
  
- \ *La Saga de Gunnlöd*\ , 
+ \ *La Saga de Gunnld*\ ,
  written by Svava Jakobsdottir,
- translated into French and annotated by Régis Boyer
- and published by José Corti
+ translated into French and annotated by Rgis Boyer
+ and published by Jos Corti
  (ISBN 2-7143-0801-5).
  
 
 
-\*
+- \*
  
  \ *The Viking Gods*\  (excerpts from the prose Edda)
  written by Snorri Sturluson,
@@ -61,6 +47,68 @@ Among others:
  edited by Jon Thorisson,
  published by Gudrun
  (ISBN 9979-856-78-5).
+ 
+
+
+
+************
+CONTRIBUTORS
+************
+
+
+Abigail, Jean Forget.
+
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command
+ in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-06-26
+ 
+ Updated by Jean Forget in Acme-MetaSyntactic version 0.80.
+ 
+ Jean provided his bibliographic references.
+ 
+
+
+- \*
+ 
+ 2006-05-22
+ 
+ Introduced in Acme-MetaSyntactic version 0.75, with categories
+ \ *dwarves*\ , \ *giants*\ , \ *gods*\ , \ *valkyries*\ , \ *worlds*\ .
+ 
+
+
+- \*
+ 
+ 2005-11-03
+ 
+ Abigail submitted five more lists for `Acme::MetaSyntactic <http://search.cpan.org/search?query=Acme%3a%3aMetaSyntactic&mode=module>`_,
+ all sharing a common element: Norse Mythology.
+ 
+ The lists were Gods, Giants, Dwarves, Valkyries and Worlds.
  
 
 
@@ -127,6 +175,7 @@ Fimbul Ragnarok\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -134,14 +183,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -152,6 +201,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -163,7 +213,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

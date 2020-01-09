@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ##########################
 Acme::MetaSyntactic::linux
@@ -32,23 +30,334 @@ CONTRIBUTOR
 ***********
 
 
-Philippe "BooK" Bruhat.
-
-Introduced in version 0.95, published on October 9, 2006.
-
-Later updates (from the source web site):
+Philippe Bruhat (BooK).
 
 
-\* version 0.97, published on October 23, 2006.
+*******
+CHANGES
+*******
 
 
 
-\* version 0.98, published on October 30, 2006.
+- \*
+ 
+ 2019-10-28 - v1.035
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.054.
+ 
 
 
+- \*
+ 
+ 2019-07-29 - v1.034
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.053.
+ 
 
-\* version 0.99, published on November 6, 2006.
 
+- \*
+ 
+ 2018-10-29 - v1.033
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.052.
+ 
+
+
+- \*
+ 
+ 2017-11-13 - v1.032
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.051.
+ 
+
+
+- \*
+ 
+ 2017-06-12 - v1.031
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.050.
+ 
+
+
+- \*
+ 
+ 2016-03-21 - v1.030
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.049.
+ 
+
+
+- \*
+ 
+ 2015-10-19 - v1.029
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.048.
+ 
+
+
+- \*
+ 
+ 2015-08-10 - v1.028
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.047.
+ 
+
+
+- \*
+ 
+ 2015-06-08 - v1.027
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.046.
+ 
+
+
+- \*
+ 
+ 2015-02-02 - v1.026
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.045.
+ 
+
+
+- \*
+ 
+ 2015-01-05 - v1.025
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.044.
+ 
+
+
+- \*
+ 
+ 2014-10-13 - v1.024
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.043.
+ 
+
+
+- \*
+ 
+ 2014-09-15 - v1.023
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.042.
+ 
+
+
+- \*
+ 
+ 2014-08-18 - v1.022
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.041.
+ 
+
+
+- \*
+ 
+ 2014-06-16 - v1.021
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.040.
+ 
+
+
+- \*
+ 
+ 2014-04-07 - v1.020
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.039.
+ 
+
+
+- \*
+ 
+ 2013-12-09 - v1.019
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.038.
+ 
+
+
+- \*
+ 
+ 2013-10-14 - v1.018
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.037.
+ 
+
+
+- \*
+ 
+ 2013-09-16 - v1.017
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.036.
+ 
+
+
+- \*
+ 
+ 2013-07-29 - v1.016
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.035.
+ 
+
+
+- \*
+ 
+ 2013-07-22 - v1.015
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.034.
+ 
+
+
+- \*
+ 
+ 2013-06-17 - v1.014
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.033.
+ 
+
+
+- \*
+ 
+ 2013-06-03 - v1.013
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.032.
+ 
+
+
+- \*
+ 
+ 2013-03-25 - v1.012
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.031.
+ 
+
+
+- \*
+ 
+ 2013-02-18 - v1.011
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.030.
+ 
+
+
+- \*
+ 
+ 2013-01-14 - v1.010
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.029.
+ 
+
+
+- \*
+ 
+ 2012-11-19 - v1.009
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.028.
+ 
+
+
+- \*
+ 
+ 2012-10-29 - v1.008
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.025.
+ 
+
+
+- \*
+ 
+ 2012-10-22 - v1.007
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.024.
+ 
+
+
+- \*
+ 
+ 2012-10-01 - v1.006
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.021.
+ 
+
+
+- \*
+ 
+ 2012-09-10 - v1.005
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.018.
+ 
+
+
+- \*
+ 
+ 2012-08-27 - v1.004
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.016.
+ 
+
+
+- \*
+ 
+ 2012-07-23 - v1.003
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.011.
+ 
+
+
+- \*
+ 
+ 2012-06-25 - v1.002
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.007.
+ 
+
+
+- \*
+ 
+ 2012-05-28 - v1.001
+ 
+ Updated from the source web site in Acme-MetaSyntactic-Themes version 1.003.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Updated with new extraction code and changes since November 2006, and
+ received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-11-06
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.99.
+ 
+
+
+- \*
+ 
+ 2006-10-30
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.98.
+ 
+
+
+- \*
+ 
+ 2006-10-23
+ 
+ Updated from the source web site in Acme-MetaSyntactic version 0.97.
+ 
+
+
+- \*
+ 
+ 2006-10-09
+ 
+ Introduced in Acme-MetaSyntactic version 0.95.
+ 
 
 
 
@@ -77,367 +386,294 @@ SEE ALSO
 name = 'linux'
 DATA = '''\
 # names
-Two_X
-Sixty_four_Studio
-AbulEdu
-Adamantix
-ADIOS
-Admelix
-Alinex
-aLinux
-AliXe
+ThreeCX
+FourMLinux
+Absolute
+AcademiX
+AIO
+Alpine
 ALT
-amaroK_Live
-Annvix
-AnNyung
-Anonym_OS
-APODIO
-Arabian
+Android_x86
+antiX
 Arch
-ArcheOS
-Archie
-Ark
-Arudius
-AsianLinux
+ArchBang
+ArchLabs
+Archman
+ArchStrike
+ArcoLinux
+Artix
+Arya
 Asianux
-ASLinux
-ASPLinux
-Astaro
-Athene
-ATmission
-Atomix
-Aurora
-Aurox
 AUSTRUMI
-B2D
-BackTrack
-Bayanihan
-BeleniX
+AV_Linux
+BackBox
+Baruwa
+batocera
+Bedrock
+BeeFree
 Berry
-BIG_LINUX
-BinToo
-BioBrew
-Bioknoppix
+Bicom
+BigLinux
+BitKey
+BlackArch
 blackPanther
-BLAG
-Bluewall
-Bluewhite64
-Buffalo
-BU_Linux
-Burapha
-Caixa_Magica
-cAos
-Catix
-CCux
-CDlinux
-Censornet
+BlankOn
+BlueOnyx
+Bluestar
+Bodhi
+BOSS
+BSDRP
+BunsenLabs
+CAELinux
+CAINE
+Calculate
+Canaima
 CentOS
-ClarkConnect
-Clusterix
-clusterKNOPPIX
-College
-Condorux
-Coyote
+Chakra
+Clear
+ClearOS
+Clonezilla
+ClonOS
+CloudReady
+Clu
+Container
 CRUX
-Damn_Small
-DANIX
-DARKSTAR
+Cucumber
+Daphile
 Debian
-Deep_Water
-DeLi
-DesktopBSD
-Devil
-Dizinha
-DNALinux
+Debian_Edu
+deepin
+DEFT
+Devuan
+DietPi
 DragonFly
-Dreamlinux
-dyne_bolic
-Dzongkha
-Eadem
-Eagle
-easys
-Edubuntu
-eduKnoppix
-Ehad
-Ekaaty
-eLearnix
+Dragora
+DRBL
+DuZeru
+EasyNAS
+EasyOS
+Elastix
+elementary
 Elive
-ELX
+Emmabuntus
+EndeavourOS
 Endian
-EnGarde
-ERPOSS
-Euronode
-Evinux
-EzPlanet_One
-FAMELIX
-Feather
-Featherweight
+Endless
+Enso
+EuroLinux
+Exe
+Exherbo
+ExTiX
+Fatdog64
 Fedora
-Fermi
-Finnix
-Foresight
-FoX_Desktop
+Feren
 FreeBSD
-Freedows
-Freeduc
-Freeduc_Sup
+FreedomBox
 FreeNAS
-FreeSBIE
+FreePBX
 Freespire
-Frenzy
-Frugalware
-FTOSX
+FuguIta
+Funtoo
+Gecko
 GeeXboX
-Gelecek
-GenieOS
 Gentoo
-GentooTH
-Gentoox
-GEOLivre
-Gibraltar
-gNewSense
-GNIX
-GNUstep
-GoblinX
-GoboLinux
+GhostBSD
 GParted
-Grafpup
-grml
-Guadalinex
-GuLIC_BSD
-Haansoft
-Hakin9
-Hancom
-Hedinux
-Helix
-Heretix
-Hikarunix
-Hiweed
-Holon
-Honeywall
-How_Tux
-Ichthux
-IDMS
-Ignalum
-Impi
-IndLinux
-INSERT
-IPCop
-JoLinux
-Julex
-K12LTSP
-Kaella
-Kalango
+Greenie
+Grml
+GuixSD
+Haiku
+Hamara
+Hanthana
+HardenedBSD
+Hyperbola
+IPFire
+Kali
 KANOTIX
-Karamad
-KateOS
-K_DEMar
-Kinneret
-Klax
-knopILS
-Knoppel
-Knopperdisk
+KaOS
+Karoshi
+KDE_neon
 KNOPPIX
-KnoppiXMAME
-KnoppMyth
-KnoSciences
-Komodo
-Kororaa
+Kodachi
+KolibriOS
 Kubuntu
-Kurumin
 Kwort
-L_A_S
+Lakka
 LFS
-LG3D
-LIIS
-Linare
-Lineox
-LinEspa
-gnuLinEx
-LinnexOS
-Linpus
+LibreELEC
+LinHES
 Linspire
 LinuxConsole
-Linux_EduCD
-Linux_Live
-LinuxTLE
-Linux_XP
-Litrix
-LiveCD_Router
-LiVux
-LLGP
+Linuxfx
+Liquid_Lemur
+Lite
+Live_Raizo
 LliureX
-LNX_BBC
-Loco
-Lormalinux
+Lubuntu
 Lunar
-Magic
-Mandriva
+LXLE
+Mageia
+MakuluLinux
+Manjaro
 MAX
-Mayix
-MCNLive
-Media_Lab
-Mediainlinux
-MEPIS
-Miracle
-MirOS
-Mockup
-MoLinux
-Momonga
-Monoppix
-m0n0wall
-Morphix
-MoviX
-Muriqui
-Murix
-Musix
-Mutagenix
-Myah_OS
-myLinux
-Nasgaia
-Nature_s
-Navyn_OS
-NepaLinux
+MidnightBSD
+Minimal
+MiniNo
+Mint
+MorpheusArch
+MX_Linux
+Namib
+Neptune
 NetBSD
-NetSecL
-Nexenta
-Niigata
-Nitix
-Nonux
-Novell_SLE
+NethServer
+Netrunner
+NexentaStor
+Nitrux
+NixOS
+NomadBSD
+Nova
 NST
-nUbuntu
-NuxOne
-OliveBSD
+NuTyX
+OB2D
+Obarun
+OLPC
+Omarine
 Omoikane
-O_Net
 OpenBSD
-Co_Create
-OpenLab
-OpenLX
-OpenNA
+OpenIndiana
+openmamba
+OpenMandriva
+OpenMediaVault
+openSUSE
 Openwall
+OPNsense
 Oracle
-Oralux
-PAIPIX
-ParallelKnoppix
+OSGeoLive
+OSMC
+OviOS
+paldo
+Parabola
 Pardus
-Parsix
-PC_BSD
+Pardus_Topluluk
+Parrot
+Parted_Magic
 PCLinuxOS
-Penguin_Sleuth
+Peach_OSI
+Pearl
 Pentoo
-Pequelin
+Peppermint
 pfSense
-Phaeronix
-Pie_Box
-Pilot
-Pingo
-Pingwinek
+Photon
+Pinguy
+Pisi
 Plamo
 PLD
+Plop
+Pop_OS
+Porteus
+Porteus_Kiosk
 Poseidon
-pQui
-Progeny
-PUD
+PrimTux
+Proxmox
 Puppy
-QiLinux
-Quantian
-Rails_Live
-Red_Flag
+PureOS
+Q4OS
+Qubes
+RancherOS
+Raspbian
+RDS
+ReactOS
+RebeccaBlackOS
 Red_Hat
-redWall
-RIP
-ROCK
+Redcore
+Refracta
+Rescatux
+RISC
+Robolinux
 Rocks_Cluster
-RoFreeSBIE
-ROOT
-ROSLIMS
-rPath
+Rockstor
+ROSA
+RSS
+Runtu
 Sabayon
-SAM
-SaxenOS
-SchilliX
-SCI_Linux
-Scientific
+SalentOS
+Secure_K
 Securepoint
-Sentry_Firewall
-SharkOS
-Shift
-Skolelinux
-Slackintosh
+SELKS
+Septor
+Shark
+siduction
+Simplicity
+Slackel
 Slackware
-Slamd64
-SLAMPP
-SLAX
-SLYNUX
+Slax
+SliTaz
+SmartOS
 SME_Server
-SmoothWall
-SoL
+Smoothwall
 Solaris
-Sorcerer
+Solus
+SolydXK
+Sophos
 Source_Mage
-StartCom
-STD
-StressLinux
-STUX
-SuliX
-Sun_Wah
-openSUSE
-Symphony_OS
+SparkyLinux
+Springdale
+Star
+SteamOS
+Stella
+Subgraph
+Super_Grub2
+SuperGamer
+SuperX
+SUSE
 SystemRescue
 T2
-TA_Linux
-Tablix
-Taprobane
+Tails
+TalkingArch
+TENS
 Thinstation
-Tilix
-tinysofa
-Topologilinux
-Trinity
-trixbox
-TrueBSD
-Trustix
-Truva
-TumiX
-TupiServer
-Tuquito
-Turbolinux
-Turkix
+Tiny_Core
+ToOpPy
+Trident
+Trisquel
+TrueOS
+TurnKey
+tuxtrans
+UBOS
+UBports
 Ubuntu
-Ubuntu_CE
-Ufficio_Zero
-UHU_Linux
-Ultima
-Underground
-Ututo
-Vector
-VideoLinux
+Ubuntu_Budgie
+Ubuntu_DP
+Ubuntu_Kylin
+Ubuntu_MATE
+Ubuntu_Studio
+Ultimate
+Univention
+Untangle
+Uruk
+VenenuX
 Vine
-VLOS
-VNLinux
-Voltalinux
-Wazobia
-White_Box
-WIENUX
-Wolvix
-Xandros
-Xarnoppix
-Xenoppix
-X_evian
-Xfld
-X_OS
-Xteam
+Void
+Volumio
+Voyager
+VyOS
+Webconverger
+Whonix
+Wifislax
+WM_Live
+XigmaNAS
 Xubuntu
-Yellow_Dog
-Yoper
-YES
+YunoHost
+Zentyal
 Zenwalk
-ZoneCD\
+Zeroshell
+Zevenet
+Zorin\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -445,14 +681,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -463,6 +699,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -474,7 +711,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

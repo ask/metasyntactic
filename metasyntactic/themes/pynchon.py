@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::pynchon
@@ -37,9 +35,37 @@ CONTRIBUTOR
 
 David Landgren.
 
-Introduced in version 0.03, published on January 14, 2005.
 
-Updated by David Landgren in version 0.41, published on September 26, 2005.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000,
+ published on May 7, 2012.
+ 
+
+
+- \*
+ 
+ 2005-09-26
+ 
+ Updated by David Landgren in Acme-MetaSyntactic version 0.41.
+ 
+
+
+- \*
+ 
+ 2005-01-14
+ 
+ Introduced in Acme-MetaSyntactic version 0.03.
+ 
+
 
 
 ********
@@ -67,6 +93,7 @@ lowenstein manganese mannaro\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -74,14 +101,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -92,6 +119,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -103,7 +131,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

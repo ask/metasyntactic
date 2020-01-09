@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #############################
 Acme::MetaSyntactic::weekdays
@@ -21,7 +19,7 @@ DESCRIPTION
 
 
 Days of the week, in various languages.
-(Some letters have been brutally transliterated to latin-1.)
+(Some letters have been brutally transliterated to us-ascii.)
 
 See `http://www.lexilogos.com/calendrier_jours.htm <http://www.lexilogos.com/calendrier_jours.htm>`_, for
 many other languages.
@@ -34,18 +32,59 @@ CONTRIBUTORS
 
 Abigail (English).
 
-Philippe "BooK" Bruhat (all the others languages, many thanks to Estelle
-Souche for her help with the Yiddish names).
-
 Gisbert W. Selke (Egyptian Arabic, Bulgarian, Czech, Modern Greek,
 Esperanto, Gaelic, Japanese, Norwegian, Russian and Tagalog).
 
-Introduced in version 0.51, published on December 5, 2005.
+Philippe "BooK" Bruhat (all the others languages, many thanks to Estelle
+Souche for her help with the Yiddish names).
 
-Made multilingual in version 0.55, published on January 2, 2006.
 
-Ten new languages added by Gisbert W. Selke in version 0.74, published
-on May 15, 2006.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-05-15
+ 
+ Ten new languages added by Gisbert W. Selke
+ in Acme-MetaSyntactiuc version 0.74.
+ 
+
+
+- \*
+ 
+ 2006-01-02
+ 
+ Made multilingual in Acme-MetaSyntactic version 0.55.
+ 
+
+
+- \*
+ 
+ 2005-12-05
+ 
+ Introduced in Acme-MetaSyntactic version 0.51.
+ 
+
+
+- \*
+ 
+ 2005-10-20
+ 
+ Submitted by Abigail (English names).
+ 
+
 
 
 ********
@@ -126,6 +165,7 @@ montik dinstik mitvokh donershtik fraytik shabes zuntik\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -133,14 +173,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -151,6 +191,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -162,7 +203,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ############################
 Acme::MetaSyntactic::colours
@@ -25,22 +23,95 @@ This theme list several colour names.
 Note: this theme is aliased by \ ``Acme::MetaSyntactic::colors``\ .
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-José Castro proposed the original list of 12 colours, and a few
-translations upon request.
+Jos Castro, Abigail, Philippe Bruhat (BooK).
 
-Abigail later and independently proposed and extended list for English,
-with the help of <http://en.wikipedia.org/wiki/List_of_colors>.
 
-Philippe Bruhat added the X11 colors lying in \ */usr/X11R6/lib/X11/rgb.txt*\ .
+*******
+CHANGES
+*******
 
-Introduced in version 0.76, published on May 29, 2006.
 
-Made multilingual in version 0.77, published on June 5, 2006.
+
+- \*
+ 
+ 2012-06-04 - v1.003
+ 
+ Abigail added the color codes for resistors in English, Catalan, Danish,
+ Dutch, Estonian, Spanish and French
+ in Acme-MetaSyntactic-Themes version 1.004.
+ 
+
+
+- \*
+ 
+ 2012-05-21 - v1.002
+ 
+ Abigail added the seven colours of the rainbow in English, Dutch, German,
+ French, Spanish, Esperanto, Latin, Italian, Polish, Tagalog, Swedish,
+ Portuguese, Danish, and Interlingua
+ in Acme-MetaSyntactic-Themes version 1.002.
+ 
+
+
+- \*
+ 
+ 2012-05-14 - v1.001
+ 
+ Updated with an \ ``=encoding``\  pod command
+ in Acme-MetaSyntactic-Themes version 1.001.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-06-05
+ 
+ Made multilingual in Acme-MetaSyntactic version 0.77,
+ with the large list of colours submitted by Abigail,
+ several translations by Jos Castro,
+ and the X11 colors lying in \ */usr/X11R6/lib/X11/rgb.txt*\ 
+ by Philippe Bruhat (BooK).
+ 
+
+
+- \*
+ 
+ 2006-05-29
+ 
+ Introduced in Acme-MetaSyntactic version 0.76,
+ with the twelve colours proposed by Jos Castro.
+ 
+
+
+- \*
+ 
+ 2005-10-20
+ 
+ Theme \ *colours*\  submitted by Abigail,
+ based on `http://en.wikipedia.org/wiki/List_of_colors <http://en.wikipedia.org/wiki/List_of_colors>`_.
+ 
+
+
+- \*
+ 
+ 2005-10-13
+ 
+ Theme \ *colors*\  submitted by Jos Castro.
+ 
+
 
 
 ********
@@ -198,11 +269,55 @@ gray87 grey87 gray88 grey88 gray89 grey89 gray90 grey90 gray91 grey91
 gray92 grey92 gray93 grey93 gray94 grey94 gray95 grey95 gray96 grey96
 gray97 grey97 gray98 grey98 gray99 grey99 gray100 grey100 dark_grey
 DarkGrey dark_gray DarkGray dark_blue DarkBlue dark_cyan DarkCyan
-dark_magenta DarkMagenta dark_red DarkRed light_green LightGreen\
+dark_magenta DarkMagenta dark_red DarkRed light_green LightGreen
+# names rainbow en
+red orange yellow green blue indigo violet
+# names rainbow nl
+rood oranje geel groen blauw indigo violet
+# names rainbow de
+rot orange gelb grun blau indigo violett
+# names rainbow fr
+rouge orange jaune vert bleu indigo violet
+# names rainbow es
+rojo naranja amarillo verde azul anil violeta
+# names rainbow eo
+ruga oranga flava verda blua indiga viola
+# names rainbow la
+ruber aurantius flavus viridus caeruleus indicum violaceus
+# names rainbow it
+rosso arancione giallo verde azzurro indaco violetto
+# names rainbow pl
+czerwona pomaranczowa zolta zielona niebieska indygo fioletowa
+# names rainbow ia
+rubie orange jalne verde blau anil violetto
+# names rainbow sv
+rod orange gul gron bla indigo violett
+# names rainbow pt
+vermelho laranja amarelo verde azul anil violeta
+# names rainbow dk
+rod orange gul gron bla indigo violet
+# names rainbow tl
+pula kahel dilaw lunti bughaw indigo lila
+# names resistor en
+black brown red orange yellow green blue violet gray white gold silver
+# names resistor ca
+negre marro vermell taronja groc vert blau violeta gris blanc daurat argent
+# names resistor dk
+sort brun rod orange gul gron bla violet gra hvid guld solv
+# names resistor nl
+zwart bruin rood oranje geel groen blauw violet grijs wit goud zilver
+# names resistor et
+must pruun punane oranz kollane reheline sinine violetne hall valge
+kuldne hobedane
+# names resistor es
+negro marron rojo naranja amarillo verde azul violeta gris blanco dorado plata
+# names resistor fr
+noir marron rouge orange jaune vert blue violet gris blanc or argent\
 '''
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -210,14 +325,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -228,6 +343,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -239,7 +355,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

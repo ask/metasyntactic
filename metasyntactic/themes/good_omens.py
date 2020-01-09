@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ###############################
 Acme::MetaSyntactic::good_omens
@@ -46,49 +44,49 @@ SUPERNATURAL BEINGS
 
 
 
-God
+- God
  
  God
  
 
 
-Metatron
+- Metatron
  
  The Voice of God
  
 
 
-Aziraphale
+- Aziraphale
  
  An angel, and part-time rare book dealer
  
 
 
-Satan
+- Satan
  
  A Fallen Angel; the Adversary
  
 
 
-Beelzebub
+- Beelzebub
  
  A Likewise Fallen Angel and Prince of Hell
  
 
 
-Hastur
+- Hastur
  
  A Fallen Angel and Duke of Hell
  
 
 
-Ligur
+- Ligur
  
  Likewise a Fallen Angel and Duke of Hell
  
 
 
-Crowley
+- Crowley
  
  An Angel who did not so much Fall as Saunter Vaguely Downwards
  
@@ -100,25 +98,25 @@ APOCALYPTIC HORSEPERSONS
 
 
 
-DEATH
+- DEATH
  
  Death
  
 
 
-War
+- War
  
  War
  
 
 
-Famine
+- Famine
  
  Famine
  
 
 
-Pollution
+- Pollution
  
  Pollution
  
@@ -130,61 +128,61 @@ HUMANS
 
 
 
-Thou-Shalt-Not-Commit-Adultery Pulsifer
+- Thou-Shalt-Not-Commit-Adultery Pulsifer
  
  A Witchfinder
  
 
 
-Agnes Nutter
+- Agnes Nutter
  
  A Prophetess
  
 
 
-Newton Pulsifer
+- Newton Pulsifer
  
  Wages Clerk and Witchfinder Private
  
 
 
-Anathema Device
+- Anathema Device
  
  Practical Occultist and Professional Descendant
  
 
 
-Shadwell
+- Shadwell
  
  Witchfinder Sergeant
  
 
 
-Madame Tracy
+- Madame Tracy
  
  Painted Jezebel [mornings only, Thursdays by arrangement] and Medium
  
 
 
-Sister Mary Loquacious
+- Sister Mary Loquacious
  
  A Satanic Nun of the Chattering Order of St. Beryl
  
 
 
-Mr Young
+- Mr Young
  
  A Father
  
 
 
-Mr Tyler
+- Mr Tyler
  
  A Chairman of a Residents' Association
  
 
 
-A Delivery Man
+- A Delivery Man
 
 
 
@@ -194,25 +192,25 @@ THEM
 
 
 
-ADAM
+- ADAM
  
  An Antichrist
  
 
 
-Pepper
+- Pepper
  
  A Girl
  
 
 
-Wensleydale
+- Wensleydale
  
  A Boy
  
 
 
-Brian
+- Brian
  
  A Boy
  
@@ -226,7 +224,7 @@ AND
 
 
 
-Dog
+- Dog
  
  Satanical hellhound and cat-worrier
  
@@ -241,7 +239,71 @@ CONTRIBUTOR
 
 Jean Forget.
 
-Introduced in version 0.97, published on October 23, 2006.
+
+***********
+IN MEMORIAM
+***********
+
+
+This theme is dedicated to Terry Pratchett (1948-2015)
+
+
+.. code-block:: perl
+
+   One day I'll be dead and THEN you'll all be sorry.
+   -- (Terry Pratchett, 28 Nov 1992, on alt.fan.pratchett)
+
+
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2016-06-08 - v1.001
+ 
+ Updated with IN MEMORIAM after the passing of Sir Terry Pratchett
+ on March 12, 2015. Published in Acme-MetaSyntactic-Themes version 1.046.
+ 
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-10-23
+ 
+ Introduced in Acme-MetaSyntactic version 0.97.
+ 
+
+
+- \*
+ 
+ 2006-09-14
+ 
+ Impressed by Abigail's technique of POD within here-doc, Jean Forget
+ submitted a version of \ *good_omens.pm*\  which uses the same trick,
+ using the exact text of the corresponding chapter in the novel,
+ with minor formatting changes to turn it into normal POD.
+ 
+
+
+- \*
+ 
+ 2006-06-21
+ 
+ Submitted by Jean Forget
+ 
+
 
 
 ********
@@ -259,6 +321,7 @@ DATA = '''\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -266,14 +329,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -284,6 +347,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -295,7 +359,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

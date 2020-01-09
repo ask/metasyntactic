@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #############################
 Acme::MetaSyntactic::viclones
@@ -21,7 +19,7 @@ DESCRIPTION
 
 
 A list of vi clones, as maintained by Sven Guckes on
-`http://www.saki.com.au/mirror/vi/clones.php3 <http://www.saki.com.au/mirror/vi/clones.php3>`_.
+`http://www.guckes.net/vi/clones.php3 <http://www.guckes.net/vi/clones.php3>`_.
 
 
 ***********
@@ -31,9 +29,36 @@ CONTRIBUTOR
 
 Philippe "BooK" Bruhat.
 
-Introduced in version 0.10, published on February 21, 2005.
 
-Added a remote list in version 0.49, published on November 21, 2005.
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2005-11-21
+ 
+ Added a remote list in Acme-MetaSyntactic version 0.49.
+ 
+
+
+- \*
+ 
+ 2005-02-21
+ 
+ Introduced in Acme-MetaSyntactic version 0.10.
+ 
+
 
 
 ********
@@ -54,6 +79,7 @@ xvi\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -61,14 +87,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -79,6 +105,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -90,7 +117,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

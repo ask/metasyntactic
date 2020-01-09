@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 #########################
 Acme::MetaSyntactic::hhgg
@@ -30,22 +28,71 @@ After glancing at
 I wonder if I should include all the entries...
 
 
-***********
-CONTRIBUTOR
-***********
+************
+CONTRIBUTORS
+************
 
 
-Aldo Calpini.
+Aldo Calpini, Philippe Bruhat, Jean Forget.
 
-Introduced in version 0.11, published on February 28, 2005.
 
-Updated by Philippe "BooK" Bruhat in version 0.14, published on March 21, 2005.
+*******
+CHANGES
+*******
 
-Link to \ *The Ultra-Complete Index to the Hitch Hiker's Guide to the Galaxy*\ 
-(written and entirely copyrighted 1992-94 by Mathias Maul)
-entry on wikipedia provided by Jean Forget in time for version 0.28,
-published on June 27, 2005. Link updated for version 0.69, published
-on April 10, 2006.
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-04-10
+ 
+ Link updated in Acme-MetaSyntactic version 0.69.
+ 
+
+
+- \*
+ 
+ 2005-06-27
+ 
+ Link to \ *The Ultra-Complete Index to the Hitch Hiker's Guide to the Galaxy*\ 
+ (written and entirely copyrighted 1992-94 by Mathias Maul)
+ entry on Wikipedia provided by Jean Forget in time for
+ Acme-MetaSyntactic version 0.28.
+ 
+
+
+- \*
+ 
+ 2005-03-21
+ 
+ Updated by Philippe "BooK" Bruhat (item \ ``fortytwo``\ )
+ in Acme-MetaSyntactic version 0.14.
+ 
+
+
+- \*
+ 
+ 2005-02-28
+ 
+ Introduced in Acme-MetaSyntactic version 0.11.
+ 
+
+
+- \*
+ 
+ 2005-02-22
+ 
+ Submitted by Aldo Calpini.
+ 
+
 
 
 ********
@@ -67,6 +114,7 @@ fortytwo\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -74,14 +122,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -92,6 +140,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -103,7 +152,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

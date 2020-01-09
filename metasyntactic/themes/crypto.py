@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ###########################
 Acme::MetaSyntactic::crypto
@@ -36,15 +34,56 @@ CONTRIBUTORS
 ************
 
 
-Idea by Anonymous \ ``<nobody@nowhere.org>``\ . See ticket #9725 on
-`http://rt.cpan.org/ <http://rt.cpan.org/>`_.
+Anonymous, Guy Widloecher.
 
-Guy Widloecher provided some more items and links. See the
-same ticket on RT.
 
-Introduced in version 0.04, published on January 15, 2005.
+*******
+CHANGES
+*******
 
-Updated in version 0.28, published on June 27, 2005.
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2005-06-27
+ 
+ Updated in Acme-MetaSyntactic version 0.28.
+ 
+
+
+- \*
+ 
+ 2005-06-23
+ 
+ Guy Widloecher provided some more items and links.
+ See ticket #9725 on `http://rt.cpan.org/ <http://rt.cpan.org/>`_.
+ 
+
+
+- \*
+ 
+ 2005-01-15
+ 
+ Introduced in Acme-MetaSyntactic version 0.04.
+ 
+
+
+- \*
+ 
+ 2005-01-14
+ 
+ Idea by Anonymous \ ``<nobody@nowhere.org>``\ .
+ See ticket #9725 on `http://rt.cpan.org/ <http://rt.cpan.org/>`_.
+ 
+
 
 
 ********
@@ -79,6 +118,7 @@ walter\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -86,14 +126,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -104,6 +144,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -115,7 +156,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

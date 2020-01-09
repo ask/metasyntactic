@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ###################################
 Acme::MetaSyntactic::space_missions
@@ -23,7 +21,9 @@ DESCRIPTION
 This theme lists the names of various space missions flights.
 
 
-Apollo
+- \*
+ 
+ \ ``apollo``\ 
  
  As from Apollo 9, the command and lunar modules of Project Apollo were
  given radio call signs. This list document them.
@@ -32,7 +32,9 @@ Apollo
  
 
 
-Mercury
+- \*
+ 
+ \ ``mercury``\ 
  
  This list gives the names of the six Mercury spacecraft,
  plus the name of the flight cancelled when Deke Slayton
@@ -42,14 +44,18 @@ Mercury
  
 
 
-Manned Spacecraft
+- \*
+ 
+ \ ``manned_spacecraft``\ 
  
  This list gives the names of the manned spacecraft,
  all nations and all agencies or firms combined.
  
 
 
-Launch Vehicles
+- \*
+ 
+ \ ``launch_vehicles``\ 
  
  This list gives the names of launch vehicles type. For vehicles with
  several numbered subtypes, only the main type has been given, without
@@ -65,7 +71,9 @@ Launch Vehicles
  
 
 
-Victims
+- \*
+ 
+ \ ``victims``\ 
  
  This list gives the names of the humans who were killed in a
  spacecraft accident.
@@ -83,13 +91,68 @@ CONTRIBUTOR
 
 Jean Forget
 
-Introduced in version 0.41 as \ ``apollo``\ , published on September 26, 2005.
 
-Augmented with other space missions and renamed \ ``space_missions``\  in
-version 0.86, published on August 7, 2006.
+*******
+CHANGES
+*******
 
-Updated with themes \ ``manned_spacecraft``\ , \ ``launch_vehicles``\  and \ ``victims``\ 
-in version 0.88, published on August 21, 2006.
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-08-21
+ 
+ Updated with themes \ ``manned_spacecraft``\ , \ ``launch_vehicles``\  and \ ``victims``\ 
+ in Acme-MetaSyntactic version 0.88.
+ 
+
+
+- \*
+ 
+ 2006-08-07
+ 
+ Augmented with other space missions and renamed \ ``space_missions``\  in
+ version 0.86, published on August 7, 2006.
+ 
+
+
+- \*
+ 
+ 2006-06-14 - 2006-06-26
+ 
+ Jean Forget proposed a new \ ``mercury``\  theme.
+ I suggested grouping both lists under a single theme
+ (\ ``space_missions``\ ? \ ``nasa``\ ?).
+ 
+ Jean selected the name \ ``space_missions``\  for the theme,
+ as he already had plans for other lists that were not related to the NASA.
+ 
+
+
+- \*
+ 
+ 2005-09-26
+ 
+ Introduced in Acme-MetaSyntactic version 0.41 as theme \ ``apollo``\ .
+ 
+
+
+- \*
+ 
+ 2005-09-12
+ 
+ Jean Forget proposed the list of Apollo command and lunar modules
+ radio call signs.
+ 
+
 
 
 ********
@@ -147,6 +210,7 @@ Kalpana_Chawla Laurel_B_Clark Ilan_Ramon\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -154,14 +218,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -172,6 +236,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -183,7 +248,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

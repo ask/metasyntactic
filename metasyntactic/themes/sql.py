@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 '''
-.. highlight:: perl
-
 
 ########################
 Acme::MetaSyntactic::sql
@@ -34,11 +32,65 @@ CONTRIBUTOR
 
 Philippe "BooK" Bruhat
 
+
+****************
+ACKNOWLEDGEMENTS
+****************
+
+
 I blame Maddingue for showing me this link, and rgs for
 saying: \ *IL LE FAUT*\ . I blame \ ``#perlfr``\  in general for
 the existence of \ ``Acme::MetaSyntactic``\ .
 
-Introduced in version 0.71, published on April 24, 2006.
+
+*******
+CHANGES
+*******
+
+
+
+- \*
+ 
+ 2012-05-07 - v1.000
+ 
+ Received its own version number in Acme-MetaSyntactic-Themes version 1.000.
+ 
+
+
+- \*
+ 
+ 2006-04-24
+ 
+ Introduced in Acme-MetaSyntactic version 0.71.
+ 
+
+
+- \*
+ 
+ 2006-03-23
+ 
+ The IRC conversation that inspired this module:
+ 
+ 
+ .. code-block:: perl
+ 
+      15:16 <@Maddingue_> thedailywtf++ "Remember, the enterprisocity of an application is directly proportionate to the number of constants defined" ha ha :)
+      15:17 <@Maddingue_>  » http://thedailywtf.com/forums/64833/ShowPost.aspx
+      ...
+      17:21 <@BooK> AMS::SQL
+      17:22 <@rgs> SELECT_STAR
+      ...
+      17:22 <@rgs> IL LE FAUT
+      17:23 <@BooK> rgs: oui, avec un lien vers ce post
+      17:23 <@BooK> il me faut une grammaire SQL, maintenant
+      17:23 <@BooK> comme source
+      17:24 <@BooK> evidemment, ce sera l'occasion de passer en multitheme, avec le support du plusieurs DB!
+      17:24 <@BooK> muahhaha
+      17:26 <@Maddingue_> GIMMIE!
+      17:27  * rgs chante du ABBA
+ 
+ 
+
 
 
 ********
@@ -80,6 +132,7 @@ YEAR ZONE\
 
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -87,14 +140,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -105,6 +158,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -116,7 +170,7 @@ def random(n=1, category=None):
             return choice(got)
         return got[:n]
 
-def sections():
-    return set(data['names'].keys())
+def categories():
+    return set(data['names'])
 
 

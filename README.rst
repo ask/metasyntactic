@@ -2,7 +2,7 @@
  metasyntactic - Themed metasyntactic variables names
 ######################################################
 
-:Version: 0.99
+:Version: 1.0.14
 
 Synopsis
 ========

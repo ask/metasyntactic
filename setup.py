@@ -4,10 +4,6 @@ import os
 import sys
 import codecs
 
-extra = {}
-if sys.version_info >= (3, 0):
-    extra.update(use_2to3=True)
-
 try:
     from setuptools import setup
 except ImportError:
@@ -70,7 +66,7 @@ setup(
     data_files=data_files,
     zip_safe=False,
     test_suite="nose.collector",
-    install_requires=[],
+    install_requires=['six'],
     tests_require=[],
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -101,4 +97,4 @@ setup(
         #"console_scripts": ["cl = cl.bin.cl:main"],
     },
     long_description=long_description,
-    **extra)
+)

@@ -1,3 +1,4 @@
+#!/bin/bash
 DEST="metasyntactic/themes"
 INIT="$DEST/__init__.py"
 
@@ -6,6 +7,7 @@ SKIP_SOURCES="Alias.pm
               Locale.pm
               MultiList.pm
               RemoteList.pm
+              Themes.pm
               any.pm"
 
 INIT_CODE="
@@ -42,6 +44,7 @@ def random(n=1):
 CODE="
 from metasyntactic.base import parse_data
 from random import choice, shuffle
+from six import iteritems
 data = parse_data(DATA)
 
 
@@ -49,14 +52,14 @@ def default():
     try:
         if 'default' in data:
             return data['default'][0]
-    except KeyError, IndexError:
+    except (KeyError, IndexError):
         pass
     return 'en'
 
 
 def all():
     acc = set()
-    for category, names in data['names'].iteritems():
+    for category, names in iteritems(data['names']):
         if names:
             acc |= names
     return acc
@@ -67,6 +70,7 @@ def names(category=None):
         category = default()
     if category == ':all':
         return list(all())
+    category = category.replace('/', ' ')
     return list(data['names'][category])
 
 
@@ -79,7 +83,7 @@ def random(n=1, category=None):
         return got[:n]
 
 def categories():
-    return set(data['names'].keys())
+    return set(data['names'])
 
 "
 
@@ -97,7 +101,7 @@ contains() {
 }
 
 mkdir -p "$DEST"
-rm "$DEST/*.py"
+rm -f "$DEST/*.py"
 > "$INIT"
 echo "all_themes = set(["    >> "$INIT"
 
@@ -114,7 +118,7 @@ for source in $*; do
                 if(/^__DATA__$/){$x=1}else{print if$x}' "$source")
         echo "# -*- coding: utf-8 -*-"  >  "$dest"
         echo "'''"                      >> "$dest"
-        echo "$docstring"               >> "$dest"
+        echo "$docstring" | iconv -c -t utf-8 >> "$dest"
         echo "'''"                      >> "$dest"
         echo                            >> "$dest"
 
